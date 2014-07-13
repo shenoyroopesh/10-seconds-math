@@ -1,0 +1,10 @@
+
+
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+
+# http://mental-math-trainer.com -> http://www.mental-math-trainer.com
+ RewriteCond %{HTTP_HOST} !^www\.mental-math-trainer\.com
+ RewriteRule (.*) http://www.mental-math-trainer.com/$1 [R=301,L]
+
