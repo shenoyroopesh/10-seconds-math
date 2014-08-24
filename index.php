@@ -27,7 +27,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <meta property="og:url" content="http://www.mental-math-trainer" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="mental-math-trainer.ico">
+        <link rel="shortcut icon" href="mental-math-trainer.ico?v=1">
 
         <link rel="canonical" href="https://play.google.com/store/apps/details?id=com.troubi.kingofmath" />
         <link rel="canonical" href="https://play.google.com/store/apps/details?id=com.troubi.mathtricks" />
@@ -57,21 +57,23 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
             <h1 id="text-title">Mental Math Trainer</h1>
         </div>
-        <p id="text-selectrange">Select your number range</p>
+        <p id="text-selectrange">Number range</p>
         <div id="math-range-slider"></div>
 
-        <p id="text-operations">What kind of questions?</p>
-        <ul class="nobullets">
-            <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
-            <li><label><input type="checkbox" checked="checked" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
-
-            <li><label><input type="checkbox" checked="checked" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>
-            <li><label><input type="checkbox" checked="checked" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
-
-            <li><label><input type="checkbox" checked="checked" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
-            <li><label><input type="checkbox" checked="checked" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
-
-        </ul>
+        <p id="text-operations">Operations</p>
+        <div id="div-operations">
+            <ul class="nobullets">
+                <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
+                <li><label><input type="checkbox" checked="checked" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
+                <li><label><input type="checkbox" checked="checked" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>
+                
+            </ul>
+            <ul class="nobullets">
+                <li><label><input type="checkbox" checked="checked" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
+                <li><label><input type="checkbox" checked="checked" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
+                <li><label><input type="checkbox" checked="checked" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
+            </ul>
+        </div>
         <div>
           <!-- <a class="btn btn-primary btn-lg" role="button">Go for it!</a></p> -->
         </div>

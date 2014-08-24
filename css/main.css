@@ -8,6 +8,7 @@
 
 body {
   padding: 0;
+  font-family: "Myriad Pro" !important;
 }
 
 .title {
@@ -32,6 +33,7 @@ body {
 .jumbotron h1 {
   text-align: center;
   display: inline-block;
+  font-family: "Myriad Pro";
 }
 
 #questionbox {
@@ -62,7 +64,8 @@ body {
 }
 
 #math-range-slider {
-  margin: 10px 10px;
+  margin-left: 60px;
+  width: 400px;
 }
 
 #math-range-slider .noUi-handle {
@@ -105,7 +108,8 @@ footer {
 
 
 .noUi-connect {
-  background: #00c791 !important;
+  background: #627583 !important;
+  box-shadow: none !important;
 }
 
 #text-operations {
@@ -113,6 +117,13 @@ footer {
   padding-top: 10px;
 }
 
+#div-operations {
+  text-align: left;
+}
+
+#div-operations > ul {
+  float: left;
+}
 
 #viewport {
   position: absolute;

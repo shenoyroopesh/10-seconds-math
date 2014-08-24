@@ -2,10 +2,10 @@
 // set background height according to screen size
 $(function() {
 
-  var footerHeight = 65;
+  var footerHeight = 55;
 
   if (isMobile()) {
-    footerHeight = 45;
+    footerHeight = 35;
   }
 
   var padd = $(window).height() - $('body').height() - footerHeight;
@@ -39,10 +39,10 @@ $(function(){
       'min': [ 0 ],
       'max': [ 100 ]
     },
-    start: [ 3, 17 ],
-    margin: 5,
+    start: [ 0, 20 ],
+    margin: 20,
     connect: true,
-    step: 0,
+    step: 10,
     serialization: {
       lower: [ toolTipLowerBound ],
       upper: [ toolTipUpperBound ]
