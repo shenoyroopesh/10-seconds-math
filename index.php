@@ -51,28 +51,29 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <![endif]-->
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron onecolor">
+    <div class="jumbotron">
       <div class="container">
-        <div class="title">
+        <div id="title">
             <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
             <h1 id="text-title">Mental Math Trainer</h1>
         </div>
-        <p id="text-selectrange">Number range</p>
-        <div id="math-range-slider"></div>
+        <div id="settings" class="white-box">
+            <p id="text-selectrange">Number range</p>
+            <div id="math-range-slider"></div>
 
-        <p id="text-operations">Operations</p>
-        <div id="div-operations">
-            <ul class="nobullets">
-                <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
-                <li><label><input type="checkbox" checked="checked" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
-                <li><label><input type="checkbox" checked="checked" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>
-                
-            </ul>
-            <ul class="nobullets">
-                <li><label><input type="checkbox" checked="checked" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
-                <li><label><input type="checkbox" checked="checked" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
-                <li><label><input type="checkbox" checked="checked" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
-            </ul>
+            <p id="text-operations">Operations</p>
+            <div id="div-operations">
+                <ul class="nobullets">
+                    <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
+                    <li><label><input type="checkbox" checked="checked" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
+                    <li><label><input type="checkbox" checked="checked" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
+                </ul>
+                <ul class="nobullets">
+                    <li><label><input type="checkbox" checked="checked" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>                    
+                    <li><label><input type="checkbox" checked="checked" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
+                    <li><label><input type="checkbox" checked="checked" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
+                </ul>
+            </div>
         </div>
         <div>
           <!-- <a class="btn btn-primary btn-lg" role="button">Go for it!</a></p> -->
@@ -80,7 +81,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </div>
     </div>
 
-    <div id="questionbox" class="jumbotron onecolor">
+    <div id="questionbox" class="jumbotron">
         <p id="question"></p>
 
         <div id="answerbox">
@@ -93,7 +94,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         </div>
     </div>
 
-    <div class="container onecolor">
+    <div id="social-container" class="container">
       <div id="viewport"></div>
       <footer>
         <p>&copy; <a href="http://troubi.com">Troubi Entertainment</a> 2014</p>

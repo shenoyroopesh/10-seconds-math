@@ -17,10 +17,10 @@ function updateBackgroundColor(score) {
 
   // console.log(score);
   if (firstBackgroundUpdate) {
-    $('.onecolor').css({background: '#' + color});
+    $('body, .jumbotron').css({background: '#' + color});
     firstBackgroundUpdate = false;
   } else {
-    $('.onecolor').animate({backgroundColor: '#' + color}, 'fast');
+    $('body, .jumbotron').animate({backgroundColor: '#' + color}, 'fast');
   }
 
 }
