@@ -16,8 +16,6 @@ function updateBackgroundColor(score) {
 
 
   // console.log(score);
-  $.cookie('score', score, { expires: 30 });
-
   if (firstBackgroundUpdate) {
     $('.onecolor').css({background: '#' + color});
     firstBackgroundUpdate = false;
@@ -34,10 +32,7 @@ $(function() {
   var $answer = $('#question-answer');
   var currentQuestion;
   var score = 1;
-  var cookieScore = $.cookie('score');
-  if (cookieScore !== undefined) {
-    score += parseInt(cookieScore);
-  }
+
 
   var factory = new QuestionFactory();
 
