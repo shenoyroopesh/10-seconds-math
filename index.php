@@ -68,7 +68,6 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             <li><label><input type="checkbox" checked="checked" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>
             <li><label><input type="checkbox" checked="checked" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
 
-            
             <li><label><input type="checkbox" checked="checked" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
             <li><label><input type="checkbox" checked="checked" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
 
