@@ -42,6 +42,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
         <!-- The noUiSlider stylesheet -->
         <link href="css/jquery.nouislider.css" rel="stylesheet">
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -52,11 +53,11 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-        <div id="title">
-            <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
-            <h1 id="text-title">Mental Math Trainer</h1>
-        </div>
+      <div id="title">
+          <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
+          <h1 id="text-title">Mental Math Trainer</h1>
+      </div>
+      <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
             <p id="text-selectrange">Number range</p>
             <div id="math-range-slider"></div>
@@ -65,25 +66,32 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             <div id="div-operations">
                 <ul class="nobullets">
                     <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
-                    <li><label><input type="checkbox" checked="checked" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
-                    <li><label><input type="checkbox" checked="checked" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
+                    <li><label><input type="checkbox" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
+                    <li><label><input type="checkbox" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
                 </ul>
                 <ul class="nobullets">
-                    <li><label><input type="checkbox" checked="checked" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>                    
-                    <li><label><input type="checkbox" checked="checked" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
-                    <li><label><input type="checkbox" checked="checked" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
+                    <li><label><input type="checkbox" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>                    
+                    <li><label><input type="checkbox" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
+                    <li><label><input type="checkbox" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
                 </ul>
             </div>
         </div>
-        <div>
-          <!-- <a class="btn btn-primary btn-lg" role="button">Go for it!</a></p> -->
+        <div id="stats" class="white-box">
+            <p><span id="time-left">60 seconds left</span></p>
+            <p class="bonus">
+              <table id="bonus-list">
+                <tr class="large"><td><span id="num-correct-calculations">0</span></td><td>correct</td></tr>
+                
+              </table>
+            </p>
+            <p><a class="btn btn-primary btn-lg sharefb" role="button">Share on Facebook</a></p>
         </div>
+        <p id="start-quiz"><a class="btn btn-primary btn-lg" role="button">Go for it!</a></p>
       </div>
     </div>
 
     <div id="questionbox" class="jumbotron">
         <p id="question"></p>
-
         <div id="answerbox">
           <div class="input-group">
             <input id="question-answer" pattern="[0-9]{1, 4}" autofocus placeholder="your answer" type="tel" class="form-control">
@@ -109,6 +117,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     
     <script src="js/setup.js"></script>
     <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/setdefaults.js"></script>
     <script src="js/localization.js"></script>
 

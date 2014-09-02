@@ -1,11 +1,3 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
 body {
   padding: 0;
   font-family: "Myriad Pro" !important;
@@ -14,6 +6,7 @@ body {
 
 #title {
   padding-bottom: 40px;
+  padding-left: 120px;
 }
 
 #title > img {
@@ -22,10 +15,67 @@ body {
   margin-top: -35px;
 }
 
+#settings-and-stats {
+
+}
+
 #settings {
   display: inline-block;
   text-align: left;
   padding: 10px;
+  float: left;
+  height: 215px;
+}
+
+#stats {
+  display: inline-block;
+  padding: 20px;
+  margin-left: 50px;
+  text-align: center;
+  width: 250px;
+  height: 215px;
+}
+
+#stats .sharefb {
+  display: none;
+}
+
+#stats > p {
+  margin: 0;
+}
+
+#bonus-list {
+  color: #777;
+  font-size: 14pt;
+  text-align: right;
+  width: 100%;
+}
+
+#bonus-list tr.large {
+  font-size: 30pt;
+}
+
+
+#bonus-list tr.large td {
+  padding-top: 50px;
+}
+
+#bonus-list .separator {
+  height: 2px;
+  background: #777;
+}
+
+#bonus-list .summary {
+  font-weight: bold;
+}
+
+#num-correct-calculations { 
+  
+}
+
+#start-quiz {
+  display: none;
+  margin-top: 100px;
 }
 
 .white-box {
@@ -86,31 +136,14 @@ body {
 
 #math-range-slider {
   margin-left: 60px;
-  width: 400px;
+  width: 300px;
+  margin-right: 40px;
 }
 
 #math-range-slider .noUi-handle {
   box-shadow: none;
 }
 
-.tooltip {
-  display: block;
-  position: absolute;
-  border: 1px solid #D9D9D9;
-  font: 400 12px/12px Arial;
-  border-radius: 3px;
-  background: #fff;
-  top: -3px;
-  padding: 5px;
-  padding-top: 9px;
-  left: -9px;
-  text-align: center;
-  width: 50px;
-  height: 30px;
-  opacity: 1;
-  font-weight: 600;
-  cursor: pointer;
-}
 
 .nobullets {
   list-style-type: none;
@@ -119,6 +152,10 @@ body {
 footer {
   margin: 0 150px;
   text-align: right;
+
+  position: absolute;
+  right: 200px;
+  bottom: 10px;
 }
 
 
@@ -175,4 +212,25 @@ footer {
 
 .fade {
     opacity: 0 !important;
+}
+
+
+/* slider ends (where the numbers are) are named such by the library */
+.tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #D9D9D9;
+  font: 400 12px/12px Arial;
+  border-radius: 3px;
+  background: #fff;
+  top: -3px;
+  padding: 5px;
+  padding-top: 9px;
+  left: -9px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  opacity: 1;
+  font-weight: 600;
+  cursor: pointer;
 }

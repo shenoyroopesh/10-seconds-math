@@ -39,8 +39,8 @@ $(function(){
       'min': [ 0 ],
       'max': [ 100 ]
     },
-    start: [ 0, 20 ],
-    margin: 20,
+    start: [ 0, 30 ],
+    margin: 10,
     connect: true,
     step: 10,
     serialization: {

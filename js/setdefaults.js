@@ -1,5 +1,7 @@
 
 
+  // checkboxes
+  var CHECK_BOX_VALUES = ['add', 'sub', 'mul', 'div', 'pow', 'sqrt'];
 
 // read cookies
 $(function() {
@@ -12,12 +14,12 @@ $(function() {
     $('#math-range-slider').val([a, b]);
   }
 
-  // checkboxes
-  var checkBoxValues = ['add', 'sub', 'mul', 'div', 'pow'];
-  checkBoxValues.forEach(function(e) {
+  CHECK_BOX_VALUES.forEach(function(e) {
     var c = $.cookie(e);
 
-    $('input[type="checkbox"][value="' + e + '"]').prop('checked', c !== 'false');
+    if (c !== undefined) {
+      $('input[type="checkbox"][value="' + e + '"]').prop('checked', c !== 'false');
+    }
   });
 
 });
@@ -42,9 +44,7 @@ $(function() {
       });
   }
 
-  // register checkboxes
-  var checkBoxValues = ['add', 'sub', 'mul', 'div', 'pow'];
-  checkBoxValues.forEach(function(e) { 
+  CHECK_BOX_VALUES.forEach(function(e) { 
     registerCheckBoxListenerByValue(e);
   });
 

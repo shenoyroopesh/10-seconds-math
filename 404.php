@@ -26,36 +26,48 @@
 
             html,
             input {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: "Myriad Pro";
             }
 
             body {
                 max-width: 700px;
-                _width: 500px;
+                width: 500px;
                 padding: 30px 20px 50px;
-                border: 1px solid #b3b3b3;
-                border-radius: 4px;
                 margin: 0 auto;
-                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-                background: #fcfcfc;
+            }
+
+            .white-box {
+              webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              -o-border-radius: 5px;
+              border-radius: 5px;
+              -webkit-background-clip: padding;
+              -moz-background-clip: padding;
+              background-clip: padding-box;
+              background-color: #fff;
+              -webkit-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
+              -moz-box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2);
             }
 
             h1 {
                 margin: 0 10px;
-                font-size: 50px;
+                font-weight: 400;
                 text-align: center;
             }
 
-            h1 span {
-                color: #bbb;
-            }
-
-            h3 {
-                margin: 1.5em 0 0.5em;
+            h2 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 16pt;
+                margin-top: 0;
+                padding-top: 0;
             }
 
             p {
                 margin: 1em 0;
+                font-size: 16pt;
+                text-align: center;
             }
 
             ul {
@@ -64,36 +76,25 @@
             }
 
             .container {
-                _width: 380px;
+                /*width: 400px;*/
                 margin: 0 auto;
             }
 
-            input::-moz-focus-inner {
+            .container p {
+                margin: 0;
                 padding: 0;
-                border: 0;
             }
 
-
-            .imageholder {
-                text-align: center;
-            }
-
-            .imageholder > img {
-                width: 300px;
-            }
         </style>
     </head>
-    <body>
+    <body class="white-box">
         <div class="container">
-            <h1>Divide by Zero!!11</h1>
-            <p class="imageholder"><img src="http://www.mental-math-trainer.com/img/404.jpg" /></p>
-            <p class="imageholder">The page you were trying to view does not exist.</p>           
-            <p>Maybe you are looking for..</p>
+            <h1>404: Not Found</h1>
+            <h2>The page you were trying to view does not exist.</h2>           
+            <p>Maybe you are looking for <a href="http://www.mental-math-trainer.com">Mental Math Trainer Home</a></p>
             <ul>
-                <li><a href="http://www.mental-math-trainer.com">Mental Math Trainer Home</a></li>
-                <li><a href="http://www.troubi.com">Troubi Entertainment &mdash; Our Company</a></li>
-                <li><a href="http://www.troubi.com/kom">Android App: King of Math</a></li>
-                <li><a href="http://www.troubi.com/mathtricks">Android App: Math Tricks</a></li>
+                <li><a href="http://www.troubi.com/kom">Android App: <b>King of Math</b></a></li>
+                <li><a href="http://www.troubi.com/mathtricks">Android App: <b>Math Tricks</b></a></li>
             </ul>
         </div>
     </body>
