@@ -114,43 +114,11 @@ function timeIsOver() {
   });
 }
 
-// updateTime();
-
-function updateScoreVisually(score, correctAnswered) {
-  $('#num-correct-calculations').html(correctAnswered);
-
-  var positiveColors = [ 'f0f9da', 'e2f1b3', 'd3ea8d', 'c4e465', 'b5dd3b', 'a7d500', '98ce00', '91c400', '89bf00', '82b800', '7bb100', '74aa00'];
-  var negativeColors = [ 'fff6de', 'ffedbe', 'ffe49c', 'ffda79', 'ffd155', 'ffc42d', 'ffbe00', 'ffb700', /* reds */ 'ff7876', 'ff423d', 'f32e28'];
-
-  var color = 'eee';
-  if (score > 0) {
-    color = positiveColors[Math.min(score, positiveColors.length) - 1];
-  } else if (score < 0) {
-    color = negativeColors[Math.min(-score, negativeColors.length) - 1];
-  }
-
-
-  // console.log(score);
-  if (firstBackgroundUpdate) {
-    $('body, .jumbotron').css({background: '#' + color});
-    firstBackgroundUpdate = false;
-  } else {
-    if (!countdownStarted) {
-      countdownStarted = true;
-      countdownTimeoutId = setInterval(updateTime, 1000); // start time countdown
-    }
-    $('body, .jumbotron').animate({backgroundColor: '#' + color}, 'fast');
-  }
-
-}
-
-
 // set up listeners
 $(function() {
   var $question = $('#question');
   var $answer = $('#question-answer');
   var currentQuestion;
-  var scorePlusMinus = 1; // +1 on correct answer, -1 on wrong
 
 
   var factory = new QuestionFactory();
@@ -162,15 +130,8 @@ $(function() {
     numAnswersGiven++;
 
     if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
-      scorePlusMinus++;
       correctAnswered++;
-      scorePlusMinus = Math.min(scorePlusMinus, 10);
-    } else { 
-      scorePlusMinus--;
-      scorePlusMinus = Math.max(scorePlusMinus, -10);
     }
-
-    updateScoreVisually(scorePlusMinus, correctAnswered);
 
     currentQuestion = factory.nextQuestion();
     $question.text(currentQuestion.getDisplay());
