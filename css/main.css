@@ -127,12 +127,12 @@ body {
 
 }
 
-#time-left {
+#time-left, #repeat {
   font-size: 80pt;
   display: inline-block;
 }
 
-#time-left-text {
+#time-left-text, #repeat-text {
   display: block;
   margin-top: -40px;
   color: #777;
@@ -143,6 +143,49 @@ body {
   height: 3px;
   width: 0%;
   background: deepskyblue;
+}
+
+#repeat-box {
+  cursor: pointer;
+  display: none;
+}
+
+#repeat-box img {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s
+}
+
+#repeat-box:hover img {
+   -webkit-animation-name: rotate; 
+  -webkit-animation-duration: 2s; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: rotate; 
+  -moz-animation-duration: 2s; 
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+#repeat {
+  margin-top: 20px;
+}
+
+#repeat-text {
+  margin-top: 0;
 }
 
 a {

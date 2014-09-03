@@ -59,7 +59,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
-            <p id="text-selectrange">Upper number bound</p>
+            <p id="text-selectrange">Number range</p>
             <div id="math-range-slider"></div>
 
             <p id="text-operations">&nbsp;</p>
@@ -81,6 +81,10 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 <span id="time-left">60</span>
                 <span id="time-left-text">seconds left</span>
                 <span id="time-left-indicator"></span>
+            </p>
+            <p id="repeat-box">
+                <img id="repeat" src="img/repeat.png" />
+                <span id="repeat-text">again!</span>
             </p>
             <p class="bonus">
               <table id="bonus-list">

@@ -13,10 +13,18 @@ var numAnswersCorrect = 0;
 var numAnswersGiven = 0;
 
 
+$(function() {
+  $('#repeat-box').click(function() {
+    // reset vars
+
+    $(this).hide();
+  });
+});
+
 function updateTime() {
   quizStartTime--;
 
-  if(quizStartTime < 0) {
+  if (quizStartTime < 0) {
     // reset vars
     clearInterval(countdownTimeoutId);
     countdownTimeoutId = -1;
