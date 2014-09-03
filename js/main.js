@@ -138,6 +138,25 @@ $(function() {
     $answer.val('');
   }
 
-  $answer.keypress(function(e) { if(e.which == 13 && $answer.val().trim() !== '') { evaluateAnswer(); }});
-  $('#submit-answer').click(function() { if ($answer.val().trim() !== '') { evaluateAnswer(); } $answer.focus(); });
+  function isNumber(n) { 
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+  function submitInputPressed(e) {
+    if(e === undefined || e.which == 13) {
+      if ($answer.val().trim() !== '' && isNumber($answer.val())) { 
+        evaluateAnswer(); 
+      }
+      $answer.val('');
+    }
+  }
+
+  $answer.keypress(function(e) { 
+    submitInputPressed(e);
+  });
+
+  $('#submit-answer').click(function() { 
+    submitInputPressed();
+    $answer.focus(); 
+  });
 });
