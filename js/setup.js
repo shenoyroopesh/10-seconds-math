@@ -31,19 +31,7 @@ $(function(){
     });
   }
 
-  var toolTipLowerBound = (function() {
-    return $.Link({
-      target: '-tooltip-<div class="tooltip"></div>',
-      method: function ( value ) {
-
-        // hide lower tooltip
-        $(this).parent().hide();
-      }
-    });
-  })();
-
-
-  var toolTipUpperBound = createRangeToolTip();
+  var toolTipLowerBound = createRangeToolTip();
 
   $('#math-range-slider').noUiSlider({
     range: {
@@ -51,12 +39,11 @@ $(function(){
       '90%': [ 100 ],
       'max': [ 1000 ]
     },
-    start: [ 0, 30 ],
+    start: 30,
     step: 10,
-    connect: true,
+    connect: 'lower',
     serialization: {
-      lower: [ toolTipLowerBound ],
-      upper: [ toolTipUpperBound ]
+      lower: [ toolTipLowerBound ]
     }
   });
 

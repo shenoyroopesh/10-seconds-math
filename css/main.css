@@ -73,13 +73,14 @@ body {
   font-weight: bold;
 }
 
-#num-correct-calculations { 
-  
-}
-
 #start-quiz {
   display: none;
   margin-top: 100px;
+}
+
+#submit-answer {
+  padding-top: 10px;
+  padding-bottom: 2px;
 }
 
 .white-box {
@@ -128,7 +129,6 @@ body {
 
 #time-left {
   font-size: 80pt;
-  margin-top: 5px;
   display: inline-block;
 }
 

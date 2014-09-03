@@ -7,11 +7,10 @@
 $(function() {
 
   // slider
-  var a = $.cookie('lowerbound');
   var b = $.cookie('upperbound');
 
-  if (a !== undefined && b !== undefined) {
-    $('#math-range-slider').val([a, b]);
+  if (b !== undefined) {
+    $('#math-range-slider').val(b);
   }
 
   CHECK_BOX_VALUES.forEach(function(e) {
@@ -28,9 +27,8 @@ $(function() {
 // register cookie listeners for writing
 $(function() {
   $('#math-range-slider').change(function(a) {
-    var bounds = $(a.target).val();
-    $.cookie('lowerbound', bounds[0], { expires: 7 });
-    $.cookie('upperbound', bounds[1], { expires: 7 });
+    var bound = $(a.target).val();
+    $.cookie('upperbound', bound, { expires: 7 });
   });
 
   function getCheckBoxFromValue(val) {
