@@ -25,7 +25,7 @@ body {
 
 #settings {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   float: left;
   height: 215px;
@@ -111,7 +111,7 @@ body {
   display: inline-block;
   font-family: "Myriad Pro";
   margin-left: 20px;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 #questionbox {
@@ -138,6 +138,17 @@ body {
   color: #777;
 }
 
+#time-left-indicator {
+  display: block;
+  height: 3px;
+  width: 0%;
+  background: deepskyblue;
+}
+
+a {
+  color: deepskyblue;
+}
+
 #question {
   font-size: 60px;
   font-weight: 600;
@@ -153,7 +164,7 @@ body {
 }
 
 #math-range-slider {
-  margin-left: 60px;
+  margin-left: 40px;
   width: 300px;
   margin-right: 40px;
 }
@@ -184,12 +195,17 @@ footer {
 
 #text-operations {
   margin-bottom: 5px;
-  padding-top: 10px;
+  padding-top: 2.5px;
+}
+
+#text-selectrange {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 #div-operations {
   text-align: left;
-  display: inline-block;
+  margin-left: 20px;
 }
 
 #div-operations > ul {

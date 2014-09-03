@@ -5,7 +5,7 @@ var firstBackgroundUpdate = true;
 var countdownStarted = false;
 var countdownTimeoutId = -1;
 
-var QUIZ_AVAILABLE_SECONDS = 60;
+var QUIZ_AVAILABLE_SECONDS = 5;
 var quizStartTime = QUIZ_AVAILABLE_SECONDS;
 
 
@@ -31,7 +31,9 @@ function updateTime() {
   } 
 
   // update timer
+  var progressPercent = (QUIZ_AVAILABLE_SECONDS - quizStartTime) / QUIZ_AVAILABLE_SECONDS * 100;
   $('#time-left').html(quizStartTime);
+  $('#time-left-indicator').animate({'width': progressPercent + '%'}, 300);
 }
 
 
@@ -55,7 +57,7 @@ function timeIsOver() {
   }
 
 
-  $('#time-left').hide();
+  // $('#time-box').hide();
 
 
     var $bonusList = $('#bonus-list');

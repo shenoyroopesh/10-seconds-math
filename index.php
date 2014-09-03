@@ -59,10 +59,10 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
-            <p id="text-selectrange">Number range</p>
+            <p id="text-selectrange">Upper number bound</p>
             <div id="math-range-slider"></div>
 
-            <p id="text-operations">Operations</p>
+            <p id="text-operations">&nbsp;</p>
             <div id="div-operations">
                 <ul class="nobullets">
                     <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
@@ -77,7 +77,11 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             </div>
         </div>
         <div id="stats" class="white-box">
-            <p><span id="time-left">60</span><span id="time-left-text">seconds left</span></p>
+            <p id="time-box">
+                <span id="time-left">60</span>
+                <span id="time-left-text">seconds left</span>
+                <span id="time-left-indicator"></span>
+            </p>
             <p class="bonus">
               <table id="bonus-list">
                 <!-- <tr><td><span id="num-correct-calculations">0</span></td><td></td></tr>
