@@ -8,7 +8,7 @@ body {
 
 #title {
   padding-bottom: 40px;
-  padding-left: 120px;
+  text-align: center;
 }
 
 #title > img {
@@ -18,7 +18,9 @@ body {
 }
 
 #settings-and-stats {
-
+  text-align: center;
+  width: 780px;
+  min-width: 780px;
 }
 
 #settings {
@@ -32,7 +34,6 @@ body {
 #stats {
   display: inline-block;
   padding: 20px;
-  margin-left: 50px;
   text-align: center;
   width: 250px;
   height: 215px;
@@ -108,10 +109,13 @@ body {
   text-align: center;
   display: inline-block;
   font-family: "Myriad Pro";
+  margin-left: 20px;
+  margin-right: 40px;
 }
 
 #questionbox {
   padding-top: 0;
+  text-align: center;
 }
 
 #questionbox .jumbotron {
@@ -123,13 +127,11 @@ body {
 
 #question {
   font-size: 60px;
-  text-align: center;
   font-weight: 600;
 }
 
 #answerbox {
   width: 100%;
-  text-align: center;
 }
 
 #answerbox > .input-group {
