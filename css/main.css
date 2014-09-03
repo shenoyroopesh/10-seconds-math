@@ -126,6 +126,18 @@ body {
 
 }
 
+#time-left {
+  font-size: 80pt;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+#time-left-text {
+  display: block;
+  margin-top: -40px;
+  color: #777;
+}
+
 #question {
   font-size: 60px;
   font-weight: 600;

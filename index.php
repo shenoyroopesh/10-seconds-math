@@ -77,11 +77,11 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             </div>
         </div>
         <div id="stats" class="white-box">
-            <p><span id="time-left">60</span></p>
+            <p><span id="time-left">60</span><span id="time-left-text">seconds left</span></p>
             <p class="bonus">
               <table id="bonus-list">
-                <tr class="large"><td><span id="num-correct-calculations">0</span></td><td>correct</td></tr>
-                
+                <!-- <tr><td><span id="num-correct-calculations">0</span></td><td></td></tr>
+ -->                
               </table>
             </p>
             <p><a class="btn btn-primary btn-lg sharefb" role="button">Share on Facebook</a></p>

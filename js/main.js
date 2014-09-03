@@ -5,7 +5,7 @@ var firstBackgroundUpdate = true;
 var countdownStarted = false;
 var countdownTimeoutId = -1;
 
-var QUIZ_AVAILABLE_SECONDS = 5;
+var QUIZ_AVAILABLE_SECONDS = 60;
 var quizStartTime = QUIZ_AVAILABLE_SECONDS;
 
 
