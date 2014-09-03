@@ -31,18 +31,29 @@ $(function(){
     });
   }
 
-  var toolTipLowerBound = createRangeToolTip();
+  var toolTipLowerBound = (function() {
+    return $.Link({
+      target: '-tooltip-<div class="tooltip"></div>',
+      method: function ( value ) {
+
+        // hide lower tooltip
+        $(this).parent().hide();
+      }
+    });
+  })();
+
+
   var toolTipUpperBound = createRangeToolTip();
 
   $('#math-range-slider').noUiSlider({
     range: {
-      'min': [ 0 ],
-      'max': [ 100 ]
+      'min': [ 10 ],
+      '90%': [ 100 ],
+      'max': [ 1000 ]
     },
     start: [ 0, 30 ],
-    margin: 10,
-    connect: true,
     step: 10,
+    connect: true,
     serialization: {
       lower: [ toolTipLowerBound ],
       upper: [ toolTipUpperBound ]

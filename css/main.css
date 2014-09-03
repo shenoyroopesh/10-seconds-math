@@ -41,6 +41,7 @@ body {
 
 #stats .sharefb {
   display: none;
+  margin-top: 15px;
 }
 
 #stats > p {

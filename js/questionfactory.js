@@ -58,6 +58,7 @@ var QuestionFactory = function() {
   }
 
   function mulFactory(a, b) {
+    b = b / Math.log(b);
     return binaryFactory(a, b, '*');
   }
 

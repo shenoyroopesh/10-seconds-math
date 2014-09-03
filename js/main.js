@@ -9,7 +9,7 @@ var QUIZ_AVAILABLE_SECONDS = 5;
 var quizStartTime = QUIZ_AVAILABLE_SECONDS;
 
 
-var correctAnswered = 0;
+var numAnswersCorrect = 0;
 var numAnswersGiven = 0;
 
 
@@ -19,6 +19,7 @@ function updateTime() {
   if(quizStartTime < 0) {
     // reset vars
     clearInterval(countdownTimeoutId);
+    countdownTimeoutId = -1;
     quizStartTime = QUIZ_AVAILABLE_SECONDS;
 
 
@@ -29,8 +30,11 @@ function updateTime() {
     return;
   } 
 
-  $('#time-left').html(quizStartTime + ' seconds left');
+  // update timer
+  $('#time-left').html(quizStartTime);
 }
+
+
 
 function timeIsOver() {
   // bonuses
@@ -45,73 +49,49 @@ function timeIsOver() {
   // larger than the bound parameter.
   // bound should be between 0 and 1
   function overPercentCorrect(bound) {
-    var percentReached = correctAnswered / numAnswersGiven;
+    var percentReached = numAnswersCorrect / numAnswersGiven;
 
     return bound >= percentReached;
   }
 
-  function over50PercentCorrect() { return overPercentCorrect(.5); }
-  function over75PercentCorrect() { return overPercentCorrect(.75); }
-  function over100PercentCorrect() { return overPercentCorrect(1); }
 
+  $('#time-left').hide();
 
-  $('#time-left').text('Time is over!');
-  // animate score
-
-
-  var enteredInner = false;
-  $('#bonus-list *').children()
-  .animate({paddingTop: "0px"}, 1000)
-  .switchClass('large', '', 1000, 'swing', function() {
-
-    if (enteredInner === false) {
-      enteredInner = true;
-    } else {
-      return;
-    }
-
-    // A bonus item consists of 
-    // predicate function, points worth, textual description
-    var bonuses = [
-      { 'predicate': allOperatorsIncluded, 'points': 10, 'text': 'all operators'},
-      { 'predicate': over50PercentCorrect, 'points': 5, 'text': '> 50% correct'},
-      { 'predicate': over75PercentCorrect, 'points': 10, 'text': '> 75% correct'},
-      { 'predicate': over100PercentCorrect, 'points': 15, 'text': '> 100% correct'},
-    ];
 
     var $bonusList = $('#bonus-list');
-    var score = 0;
-    var maxIndex = 0;
+    var cumulativeScore = numAnswersCorrect;
 
-    for (; maxIndex < bonuses.length; maxIndex++) {
-      var bonus = bonuses[maxIndex];
-      if (bonus.predicate()) {
-        score += bonus.points;
 
-        var $bonusTag = $('<tr><td>+' + bonus.points + '</td><td>' + bonus.text + '</td></tr>').hide();
+    // var maxIndex = 0;
+
+    // for (; maxIndex < bonuses.length; maxIndex++) {
+    //   var bonus = bonuses[maxIndex];
+    //   if (bonus.predicate()) {
+    //     score += bonus.points;
+
+        var $bonusTag = $('<tr><td>+' + 5 + '</td><td>' + 'awezom' + '</td></tr>').hide();
         $bonusList.append($bonusTag);
 
-        setTimeout(function() { 
-          $bonusTag.show('slow');
-        }, 1000 * (maxIndex + 1));
-      }
-    };
+    //     setTimeout(function() { 
+    //       $bonusTag.show('slow');
+    //     }, 1000 * (maxIndex + 1));
+    //   }
+    // };
 
     // summary
-    var summaryDelay = 1000 * (maxIndex + 2);
-    setTimeout(function() {
+    // var summaryDelay = 1000 * (maxIndex + 2);
+    // setTimeout(function() {
       $separator = $('<tr class="separator"><td></td><td></td></tr>').hide();
       $score = $('<tr class="summary"><td>' + score + '</td><td>score</td></tr>').hide();
       $bonusList.append($separator).append($score);
       $separator.show('slow'); $score.show('slow');
-    }, summaryDelay);
+    // }, summaryDelay);
 
-    var facebookDelay = 1000 * (maxIndex + 3);
-    setTimeout(function() {
-      $('#stats .sharefb').show('slow');
-    }, facebookDelay);
-    
-  });
+    // var facebookDelay = 1000 * (maxIndex + 3);
+    // setTimeout(function() {
+      $('#stats .sharefb').fadeIn();
+    // }, facebookDelay);
+
 }
 
 // set up listeners
@@ -119,18 +99,24 @@ $(function() {
   var $question = $('#question');
   var $answer = $('#question-answer');
   var currentQuestion;
-
-
   var factory = new QuestionFactory();
 
-  // set first question
-  evaluateAnswer();
+  setFirstQuestion();
+  function setFirstQuestion() {
+    currentQuestion = factory.nextQuestion();
+    $question.text(currentQuestion.getDisplay());
+    $answer.val('');
+  }
 
   function evaluateAnswer() {
+    if (countdownTimeoutId === -1) {
+      countdownTimeoutId = setInterval(updateTime, 1000);
+    }
+
     numAnswersGiven++;
 
     if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
-      correctAnswered++;
+      numAnswersCorrect++;
     }
 
     currentQuestion = factory.nextQuestion();
@@ -151,6 +137,7 @@ $(function() {
     }
   }
 
+  // register answer submit listeners
   $answer.keypress(function(e) { 
     submitInputPressed(e);
   });

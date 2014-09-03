@@ -77,7 +77,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             </div>
         </div>
         <div id="stats" class="white-box">
-            <p><span id="time-left">60 seconds left</span></p>
+            <p><span id="time-left">60</span></p>
             <p class="bonus">
               <table id="bonus-list">
                 <tr class="large"><td><span id="num-correct-calculations">0</span></td><td>correct</td></tr>
@@ -112,12 +112,11 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     
     <script src="js/setup.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
     <script src="js/setdefaults.js"></script>
     <script src="js/localization.js"></script>
 
