@@ -3,6 +3,8 @@ body {
   font-family: "Myriad Pro" !important;
   background: url(../img/background.jpg) !important;
   background-repeat: repeat;
+
+  min-width: 900px;
 }
 
 
@@ -111,6 +113,7 @@ body {
   text-align: center;
   display: inline-block;
   font-family: "Myriad Pro";
+  font-size: 63px;
   margin-left: 20px;
   margin-right: 50px;
 }
@@ -222,12 +225,10 @@ a {
 }
 
 footer {
-  margin: 0 150px;
-  text-align: right;
-
-  position: absolute;
-  right: 200px;
-  bottom: 10px;
+ text-align: right;
+position: absolute;
+right: 20%;
+bottom: 10px;
 }
 
 

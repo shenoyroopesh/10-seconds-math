@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"  prefix="og: http://ogp.me/ns#"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<html class="no-js" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,7 +34,9 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
 
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="css/main.css">
 
         <!-- The noUiSlider stylesheet -->
@@ -99,7 +98,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     </div>
 
     <div id="questionbox" class="jumbotron">
-        <p id="question"></p>
+        <p id="question">&nbsp;</p>
         <div id="answerbox">
           <div class="input-group">
             <input id="question-answer" pattern="[0-9]{1, 4}" autofocus placeholder="your answer" type="tel" class="form-control">
