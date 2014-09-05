@@ -70,7 +70,7 @@ var QuestionFactory = function() {
     var y = x1 * x2;
 
     if (y > b)
-      return divFactory(a, b);
+      return divFactory(a, b * 2);
 
     return "{0} {1} {2}".format(y, '/', x1);
   }

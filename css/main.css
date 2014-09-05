@@ -42,12 +42,14 @@ body {
 }
 
 #stats .sharefb {
-  display: none;
-  margin-top: 15px;
 }
 
 #stats > p {
   margin: 0;
+}
+
+#results {
+  display: none;
 }
 
 #bonus-list {
@@ -55,6 +57,7 @@ body {
   font-size: 14pt;
   text-align: right;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 #bonus-list tr.large {
@@ -312,3 +315,5 @@ bottom: 10px;
   font-weight: 600;
   cursor: pointer;
 }
+
+

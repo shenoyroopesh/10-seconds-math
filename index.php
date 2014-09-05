@@ -37,11 +37,14 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="css/main.css">
 
         <!-- The noUiSlider stylesheet -->
         <link href="css/jquery.nouislider.css" rel="stylesheet">
         <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/buttons.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -85,15 +88,16 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 <img id="repeat" src="img/repeat.png" />
                 <span id="repeat-text">again!</span>
             </p>
-            <p class="bonus">
-              <table id="bonus-list">
+            <div id="results">
+                <p>Results</p>
+                <table id="bonus-list">
                 <!-- <tr><td><span id="num-correct-calculations">0</span></td><td></td></tr>
  -->                
-              </table>
-            </p>
-            <p><a class="btn btn-primary btn-lg sharefb" role="button">Share on Facebook</a></p>
+                </table>
+                <p><a class="button blue sharefb">Share on Facebook</a></p>
+            </div>
         </div>
-        <p id="start-quiz"><a class="btn btn-primary btn-lg" role="button">Go for it!</a></p>
+        <p id="start-qui"><a class="button blue">Play Again</a></p>
       </div>
     </div>
 

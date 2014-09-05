@@ -65,12 +65,12 @@ function timeIsOver() {
   }
 
 
-  // $('#time-box').hide();
+    $('#time-box').hide();
 
 
     var $bonusList = $('#bonus-list');
     var cumulativeScore = numAnswersCorrect;
-
+    var score = 0;
 
     // var maxIndex = 0;
 
