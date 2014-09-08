@@ -33,7 +33,6 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <link rel="canonical" href="https://www.metahill.com" />
 
 
-
         <!-- Latest compiled and minified Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -44,7 +43,8 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/buttons.css"> 
+        <link rel="stylesheet" href="css/share.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -61,7 +61,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
-            <p id="text-selectrange">Number range</p>
+            <p id="text-selectrange">Number limit</p>
             <div id="math-range-slider"></div>
 
             <p id="text-operations">&nbsp;</p>
@@ -84,20 +84,62 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 <span id="time-left-text">seconds left</span>
                 <span id="time-left-indicator"></span>
             </p>
-            <p id="repeat-box">
+     <!--        <p id="repeat-box">
                 <img id="repeat" src="img/repeat.png" />
                 <span id="repeat-text">again!</span>
-            </p>
+            </p> -->
             <div id="results">
                 <p>Results</p>
                 <table id="bonus-list">
                 <!-- <tr><td><span id="num-correct-calculations">0</span></td><td></td></tr>
  -->                
                 </table>
-                <p><a class="button blue sharefb">Share on Facebook</a></p>
+                
+
+
+<div id="sharebuttons">
+    <section>
+      <div class="sharebutton">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my King of Math score" data-via="" data-hashtags="mathwiz">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+
+        <div class="cover">
+            <div class="innie"></div>
+            <div class="spine"></div>
+            <div class="outie"></div>
+        </div>
+        <div class="shadow"></div>
+    </section>
+
+    <section class="sharefacebook">
+      <div class="sharebutton">
+      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+        </div>
+            <div class="cover">
+            <div class="innie"></div>
+            <div class="spine"></div>
+            <div class="outie"></div>
+        </div>
+        <div class="shadow"></div>
+    </section>
+</div>
+    
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=467518076718074&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
             </div>
         </div>
-        <p id="start-qui"><a class="button blue">Play Again</a></p>
+        <p id="start-quiz"><a class="button blue">Play Again</a></p>
       </div>
     </div>
 

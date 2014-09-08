@@ -1,0 +1,181 @@
+
+  section, section div {
+  /* See it in slo-mo, you can change this */
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+}
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body {
+  align-items: center;
+  background-image: -webkit-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #D8DFE9 100%);
+  background-image: radial-gradient(circle farthest-corner at center top, #FFFFFF 0%, #D8DFE9 100%);
+  overflow: hidden;
+}
+
+#sharebuttons {
+  font-size: 15px;
+}
+
+#sharebuttons .twitter-share-button  {
+  margin: 0;
+}
+
+#sharebuttons > section {
+  display: inline-block;
+  margin: 0 3px;
+  float: left;
+  text-align: center;
+  height: 38px;
+}
+
+section, .sharebutton { -webkit-transition-timing-function: ease; transition-timing-function: ease; }
+
+section {
+  display: inline-block;
+  position: relative;
+  padding: .375rem .375rem 0;
+  height: 2.5rem;
+  background: #A9ADB6;
+  border-radius: .25rem;
+  -webkit-perspective: 300;
+  perspective: 300;
+  -webkit-box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+  box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);
+}
+
+@font-face {
+    font-family: 'socicon';
+    src: url('../fonts/socicon-webfont.eot');
+    src: url('../fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socicon-webfont.woff') format('woff'),
+         url('../fonts/socicon-webfont.ttf') format('truetype'),
+         url('../fonts/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.sharebutton { 
+  opacity: 0;
+  width: 80px;
+  padding-top: 4px;
+  padding-left: 2px;
+}
+
+.sharefacebook .sharebutton {
+  padding-left: 0px;
+}
+
+.cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.innie, .outie, .spine, .shadow { position: absolute; width: 100%;  }
+
+.innie {
+  padding: 12px;
+}
+
+.innie, .outie {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}
+
+.innie:after, .outie:after { 
+  font-family: 'socicon';
+  content:"a";
+}
+
+
+.sharefacebook .innie:after, .sharefacebook .outie:after { 
+  content:"b";
+}
+
+.innie {
+  background-color: #67E2FE;
+  text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+
+.spine {
+  top: .25rem;
+  background: #20C7F3;
+  height: .25rem;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.shadow {
+  top: 100%;
+  left: 0;
+  height: 3.5rem;
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.6)), to(transparent));
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+.outie {
+  background-color: #2EC8FA;
+  -webkit-transform: translateZ(.25rem);
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+  padding: 12px;
+}
+
+.sharefacebook .outie, .sharefacebook .innie, .sharefacebook .spine {
+  background-color: #4D68A4;
+}
+
+section:hover { background: #EBEFF2; }
+section:hover .sharebutton { opacity: 1; }
+
+section:hover .cover, section:hover .innie, section:hover .spine, section:hover .outie, section:hover .spine { -webkit-transition-timing-function: cubic-bezier(.2,.7,.1,1.1); transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+section:hover .cover { -webkit-transform: rotateX(-120deg); transform: rotateX(-120deg);  }
+
+section:hover .innie { background-color: #3ADAFC; }
+section:hover .spine { background-color: #52B1E0; }
+section:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }
+
+
+.sharefacebook:hover .innie { background-color: #4D68A4; }
+.sharefacebook:hover .spine { background-color: #1A2F6E; }
+.sharefacebook:hover .outie { background-color: #3A589A; color: rgba(255,255,255,0); }
+
+section:hover .shadow { 
+  opacity: 1;
+  -webkit-transform: rotateX(45deg) scale(.95);
+  transform: rotateX(45deg) scale(.95);
+}
+
+
+small {
+  font: .8rem/1 sans-serif;
+  padding-top: 4rem;
+  color: #777;
+}
+small a { color: #222; text-decoration: none; border-bottom: thin solid #ccc; }
+small a:hover { border-bottom-color: #222; }

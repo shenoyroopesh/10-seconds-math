@@ -33,8 +33,6 @@ function updateTime() {
 
     timeIsOver();
 
-    $('#questionbox').fadeOut();
-    $('#start-quiz').fadeIn();
     return;
   } 
 
@@ -45,7 +43,7 @@ function updateTime() {
 }
 
 
-
+timeIsOver();
 function timeIsOver() {
   // bonuses
   function allOperatorsIncluded() {
@@ -65,7 +63,11 @@ function timeIsOver() {
   }
 
 
+    $('#questionbox').hide();
     $('#time-box').hide();
+
+    $('#results').show();
+    $('#start-quiz').show();
 
 
     var $bonusList = $('#bonus-list');
