@@ -66,8 +66,9 @@ function timeIsOver() {
     $('#questionbox').hide();
     $('#time-box').hide();
 
-    $('#results').show();
     $('#start-quiz').show();
+    $('#results').show();
+    $('#sharebuttons').show();
 
 
     var $bonusList = $('#bonus-list');
