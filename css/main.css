@@ -52,6 +52,17 @@ body {
   display: none;
 }
 
+#results .score {
+  color: crimson;
+  font-weight: bold;
+}
+
+#results img.info {
+  height: 20px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
 #bonus-list {
   color: #777;
   font-size: 14pt;
@@ -119,6 +130,14 @@ body {
   font-size: 63px;
   margin-left: 20px;
   margin-right: 50px;
+}
+
+h2 {
+  font-size: 18pt !important;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 #questionbox {
@@ -195,7 +214,12 @@ body {
 }
 
 a {
-  color: deepskyblue;
+  color: crimson;
+}
+
+a:hover {
+  color: darkred;
+  text-decoration: none;
 }
 
 #question {
@@ -236,7 +260,7 @@ bottom: 10px;
 
 
 .noUi-connect {
-  background: #627583 !important;
+  background: crimson;
   box-shadow: none !important;
 }
 
@@ -292,14 +316,14 @@ bottom: 10px;
 }
 
 
-
+/*
 .fade {
     opacity: 0 !important;
-}
+}*/
 
 
 /* slider ends (where the numbers are) are named such by the library */
-.tooltip {
+#math-range-slider .tooltip {
   display: block;
   position: absolute;
   border: 1px solid #D9D9D9;

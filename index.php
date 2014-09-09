@@ -16,7 +16,6 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <meta name="keywords" content="mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
 
 
-
         <meta property="og:image" content="http://www.mental-math-trainer/img/mental-math-trainer.png" />
         <meta property="og:title" content="Mental Math Trainer | Education" />
         <meta property="og:description" content="" />
@@ -34,19 +33,23 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
 
         <!-- Latest compiled and minified Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
 
         <!-- The noUiSlider stylesheet -->
-        <link href="css/jquery.nouislider.css" rel="stylesheet">
-        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery.nouislider.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
 
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/buttons.css"> 
         <link rel="stylesheet" href="css/share.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -61,7 +64,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
-            <p id="text-selectrange">Number limit</p>
+            <h2 id="text-selectrange">Number limit</h2>
             <div id="math-range-slider"></div>
 
             <p id="text-operations">&nbsp;</p>
@@ -78,65 +81,61 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 </ul>
             </div>
         </div>
+
         <div id="stats" class="white-box">
             <p id="time-box">
                 <span id="time-left">60</span>
                 <span id="time-left-text">seconds left</span>
                 <span id="time-left-indicator"></span>
             </p>
-     <!--        <p id="repeat-box">
-                <img id="repeat" src="img/repeat.png" />
-                <span id="repeat-text">again!</span>
-            </p> -->
             <div id="results">
-                <p>Results</p>
-                <table id="bonus-list">
-                <!-- <tr><td><span id="num-correct-calculations">0</span></td><td></td></tr>
- -->                
-                </table>
+                <h2>Results<img class="info" src="img/info.png" type="button" 
+        class="btn btn-default" 
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Tooltip on left"/></h2>
                 
 
-
-<div id="sharebuttons">
-    <section>
-      <div class="sharebutton">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my King of Math score" data-via="" data-hashtags="mathwiz">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </div>
-
-        <div class="cover">
-            <div class="innie"></div>
-            <div class="spine"></div>
-            <div class="outie"></div>
-        </div>
-        <div class="shadow"></div>
-    </section>
-
-    <section class="sharefacebook">
-      <div class="sharebutton">
-      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
-        </div>
-            <div class="cover">
-            <div class="innie"></div>
-            <div class="spine"></div>
-            <div class="outie"></div>
-        </div>
-        <div class="shadow"></div>
-    </section>
-</div>
-    
-
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=467518076718074&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+                <p class="description"></p>
 
 
+                <div id="sharebuttons">
+                    <section>
+                      <div class="sharebutton">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my math score @mathwiz" data-via="" data-hashtags="mathwiz">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                      </div>
 
+                        <div class="cover">
+                            <div class="innie"></div>
+                            <div class="spine"></div>
+                            <div class="outie"></div>
+                        </div>
+                        <div class="shadow"></div>
+                    </section>
+
+                    <section class="sharefacebook">
+                      <div class="sharebutton">
+                      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+                        </div>
+                            <div class="cover">
+                            <div class="innie"></div>
+                            <div class="spine"></div>
+                            <div class="outie"></div>
+                        </div>
+                        <div class="shadow"></div>
+                    </section>
+                </div>
+                    
+
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=467518076718074&version=v2.0";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
             </div>
         </div>
         <p id="start-quiz"><a class="button blue">Play Again</a></p>
@@ -164,10 +163,9 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
     <script src="js/jquery.cookie.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
     <script src="js/setup.js"></script>
     <script src="js/setdefaults.js"></script>

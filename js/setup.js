@@ -53,5 +53,9 @@ $(function(){
       $('#question-answer').focus();
     });
   }
+});
 
+// enable tooltips
+$(function() {
+    $("[data-toggle=tooltip").tooltip();
 });

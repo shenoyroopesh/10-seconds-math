@@ -105,6 +105,16 @@ function timeIsOver() {
       $('#stats .sharefb').fadeIn();
     // }, facebookDelay);
 
+
+  // we should add a real ranking one day
+  var ONE_BARELY_REACHES_THIS_SCORE = 50;
+  var betterThanPercent = 100 * Math.max(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), 1)
+
+  var description = '' + 
+  'You scored <span class="score">' + score+ '</span><br>' +
+  'You are better than ' + betterThanPercent + ' %';
+  $('#results .description').html(description);
+
 }
 
 // set up listeners

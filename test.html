@@ -4,48 +4,27 @@
        </head>
   <body>
 
-   <link href="css/share.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+   
+   <button type="button" 
+        class="btn btn-default" 
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Tooltip on left">
+            Tooltip on left
+</button>
 
 
-<div id="sharebuttons">
-    <section>
-      <div class="sharebutton">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my King of Math score" data-via="" data-hashtags="mathwiz">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </div>
 
-        <div class="cover">
-            <div class="innie"></div>
-            <div class="spine"></div>
-            <div class="outie"></div>
-        </div>
-        <div class="shadow"></div>
-    </section>
-
-    <section class="sharefacebook">
-      <div class="sharebutton">
-      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
-        </div>
-            <div class="cover">
-            <div class="innie"></div>
-            <div class="spine"></div>
-            <div class="outie"></div>
-        </div>
-        <div class="shadow"></div>
-    </section>
-</div>
-    
-
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=467518076718074&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $("[data-toggle=tooltip").tooltip();
+  });
+</script>
 
   </body>
 </html>

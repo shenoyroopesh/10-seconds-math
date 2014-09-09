@@ -29,10 +29,10 @@
 }
 
 .button.blue {
-  background: -moz-linear-gradient(top, #a2d3e9, #7abedf);
-  background: -webkit-linear-gradient(top, #a2d3e9, #7abedf);
-  background: linear-gradient(to bottom, #a2d3e9, #7abedf);
-  box-shadow: -1px 0px 1px #6fadcb, 0px 1px 1px #54809d, -2px 1px 1px #6fadcb, -1px 2px 1px #54809d, -3px 2px 1px #6fadcb, -2px 3px 1px #54809d, -4px 3px 1px #6fadcb, -3px 4px 1px #54809d, -5px 4px 1px #6fadcb, -4px 5px 1px #54809d, -6px 5px 1px #6fadcb, -6px 7px 0 rgba(0, 0, 0, 0.05), -5px 8px 0 rgba(0, 0, 0, 0.05), -3px 9px 0 rgba(0, 0, 0, 0.04), -2px 10px 0 rgba(0, 0, 0, 0.04), -1px 11px 0 rgba(0, 0, 0, 0.03), 0px 12px 0 rgba(0, 0, 0, 0.03), 1px 13px 0 rgba(0, 0, 0, 0.02), 2px 14px 0 rgba(0, 0, 0, 0.02), 3px 15px 0 rgba(0, 0, 0, 0.01), 4px 16px 0 rgba(0, 0, 0, 0.01), 5px 17px 0 rgba(0, 0, 0, 0.01), 6px 18px 0 rgba(0, 0, 0, 0.01), inset 0 4px 5px -2px rgba(255, 255, 255, 0.5), inset 0 1px 0 0 rgba(0, 0, 0, 0.3);
+  background: -moz-linear-gradient(top, crimson, crimson);
+  background: -webkit-linear-gradient(top, crimson, crimson);
+  background: linear-gradient(to bottom, crimson, crimson);
+  box-shadow: -1px 1px 0 darkred, -2px 2px 0 darkred, -3px 3px 0 darkred, -4px 4px 0 darkred, -5px 5px 0 darkred; 
 }
 .button.blue:hover {
   color: white !important;
