@@ -165,8 +165,8 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     </div>
 
     <!-- fork me on github -->
-    <a href="https://github.com/michaeljakob/10-seconds-math">
-        <img style="position: absolute; width: 150px; top: 0; right: 0; border: 0;" src="img/forkme-github.png" alt="Fork me on GitHub">
+    <a id="github-forkme" target="_blank" href="https://github.com/michaeljakob/10-seconds-math">
+        <img src="img/forkme-github.png" alt="Fork me on GitHub">
     </a>
 
 
