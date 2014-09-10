@@ -84,7 +84,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
         <div id="stats" class="white-box">
             <p id="time-box">
-                <span id="time-left">60</span>
+                <span id="time-left">10</span>
                 <span id="time-left-text">seconds left</span>
                 <span id="time-left-indicator"></span>
             </p>

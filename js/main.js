@@ -5,7 +5,7 @@ var firstBackgroundUpdate = true;
 var countdownStarted = false;
 var countdownTimeoutId = -1;
 
-var QUIZ_AVAILABLE_SECONDS = 5;
+var QUIZ_AVAILABLE_SECONDS = 10;
 var quizStartTime = QUIZ_AVAILABLE_SECONDS;
 
 
@@ -76,6 +76,9 @@ function showEvaluationLayout() {
   $('#start-quiz').show();
   $('#results').show();
   $('#sharebuttons').show();
+
+  $('#time-left').text(QUIZ_AVAILABLE_SECONDS);
+  $('#time-left-indicator').css({'width': '0%'});
 }
 
 // make sure always at least one checkbox is checked
