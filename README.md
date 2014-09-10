@@ -1,4 +1,4 @@
-10 seconds math
+10 seconds of math. be fast. be clever.
 ===============
 
 Try to beat the time! <br>
