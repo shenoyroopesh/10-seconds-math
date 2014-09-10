@@ -157,6 +157,15 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </footer>
     </div>
 
+    <span style="display:none">
+    <?php
+        $positive = preg_replace('/\n/', '|', file_get_contents('raw/positive.txt'));
+        $negative = preg_replace('/\n/', '|', file_get_contents('raw/negative.txt'));
+        echo "<span id='jsdata-positive'>$positive</span>";
+        echo "<span id='jsdata-negative'>$negative</span>";
+    ?>
+    </span>
+
     <!-- fork me on github -->
     <a id="github-forkme" target="_blank" href="https://github.com/michaeljakob/10-seconds-math">
         <img src="img/forkme-github.png" alt="Fork me on GitHub">

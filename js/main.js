@@ -12,6 +12,9 @@ var numAnswersCorrect = 0;
 var numAnswersGiven = 0;
 
 
+var POSITIVE = $('#jsdata-positive').text().split('|');
+var NEGATIVE = $('#jsdata-negative').text().split('|');
+
 function resetState() {
   numAnswersGiven = numAnswersCorrect = 0;
   countdownTimeoutId = -1;
