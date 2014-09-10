@@ -13,11 +13,11 @@ var numAnswersCorrect = 0;
 var numAnswersGiven = 0;
 
 
-// function resetState() {
-//   numAnswersGiven = numAnswersCorrect = 0;
-//   countdownTimeoutId = -1;
-//   countdownStarted = false;
-// }
+function resetState() {
+  numAnswersGiven = numAnswersCorrect = 0;
+  countdownTimeoutId = -1;
+  countdownStarted = false;
+}
 
 
 $(function() {
@@ -50,8 +50,25 @@ function updateTime() {
 }
 
 
-timeIsOver();
-function timeIsOver() {
+$('#start-quiz').click(function() {
+  resetState();
+  showStartLayout();
+
+});
+
+function showStartLayout() {
+  // hide timing tags
+  $('#questionbox').show();
+  $('#time-box').show();
+
+  // show evaluation tags
+  $('#start-quiz').hide();
+  $('#results').hide();
+  $('#sharebuttons').hide();
+}
+
+function showEvaluationLayout() {
+
   // hide timing tags
   $('#questionbox').hide();
   $('#time-box').hide();
@@ -60,25 +77,21 @@ function timeIsOver() {
   $('#start-quiz').show();
   $('#results').show();
   $('#sharebuttons').show();
-  $('#stats .sharefb').show();
+}
+
+timeIsOver();
+function timeIsOver() {
+
+  showEvaluationLayout();
 
   // calculate score
   var sliderMax = parseInt($('#math-range-slider').val());
   var numOperatorsEnabled =  $('#div-operations :checkbox').size();
   var score = Math.ceil(numAnswersCorrect + sliderMax / 10 + numOperatorsEnabled);
 
-  // show score and % rating
-  $separator = $('<tr class="separator"><td></td><td></td></tr>').hide();
-  $score = $('<tr class="summary"><td>' + score + '</td><td>score</td></tr>').hide();
-  $separator.show('slow'); $score.show('slow');
-
-
-
-
-
-  // we should add a real ranking one day
+  // TODO we should add a real ranking one day
   var ONE_BARELY_REACHES_THIS_SCORE = 50;
-  var betterThanPercent = 100 * Math.max(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99)
+  var betterThanPercent = 100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99)
 
   var description = '' + 
   'You scored <span class="score">' + score+ '</span><br>' +
