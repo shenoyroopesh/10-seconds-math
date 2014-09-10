@@ -92,7 +92,7 @@ $('#div-operations :checkbox').change(function(e){
 
 
 
-timeIsOver();
+// timeIsOver();
 function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();
@@ -107,7 +107,7 @@ function timeIsOver() {
   function getRank(score) {
     // TODO we should add a real ranking one day
 
-    var ONE_BARELY_REACHES_THIS_SCORE = 100;
+    var ONE_BARELY_REACHES_THIS_SCORE = 200;
     return Math.floor(100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99));
   }
 
