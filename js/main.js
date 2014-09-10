@@ -84,15 +84,15 @@ function showEvaluationLayout() {
 // make sure always at least one checkbox is checked
 $('#div-operations :checkbox').change(function(e){
   if (!$(this).is(':checked')) {
-      if ($("#div-operations :checkbox:checked").length === 0) {
-        $(this).prop('checked', true);
-      }
+    if ($("#div-operations :checkbox:checked").length === 0) {
+      $(this).prop('checked', true);
+    }
   }
 });
 
 
 
-// timeIsOver();
+timeIsOver();
 function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();
