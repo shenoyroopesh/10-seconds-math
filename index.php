@@ -162,7 +162,12 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       <footer>
         <p>&copy; <a href="http://troubi.com">Troubi Entertainment</a> 2014</p>
       </footer>
-    </div> <!-- /container -->
+    </div>
+
+    <!-- fork me on github -->
+    <a href="https://github.com/michaeljakob/10-seconds-math">
+        <img style="position: absolute; width: 150px; top: 0; right: 0; border: 0;" src="img/forkme-github.png" alt="Fork me on GitHub">
+    </a>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
