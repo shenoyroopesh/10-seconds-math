@@ -68,7 +68,6 @@ function showStartLayout() {
 }
 
 function showEvaluationLayout() {
-
   // hide timing tags
   $('#questionbox').hide();
   $('#time-box').hide();
@@ -79,25 +78,30 @@ function showEvaluationLayout() {
   $('#sharebuttons').show();
 }
 
-timeIsOver();
+
 function timeIsOver() {
-
   showEvaluationLayout();
+  var score = calculateScore();
+  setEvaluation(score, getRank(score));
 
-  // calculate score
-  var sliderMax = parseInt($('#math-range-slider').val());
-  var numOperatorsEnabled =  $('#div-operations :checkbox').size();
-  var score = Math.ceil(numAnswersCorrect + sliderMax / 10 + numOperatorsEnabled);
+  function calculateScore() {
+    var sliderMax = parseInt($('#math-range-slider').val());
+    var numOperatorsEnabled =  $('#div-operations :checkbox').size();
+    return Math.ceil(numAnswersCorrect * (sliderMax / 10 + numOperatorsEnabled));
+  }
 
-  // TODO we should add a real ranking one day
-  var ONE_BARELY_REACHES_THIS_SCORE = 50;
-  var betterThanPercent = 100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99)
+  function getRank(score) {
+    // TODO we should add a real ranking one day
 
-  var description = '' + 
-  'You scored <span class="score">' + score+ '</span><br>' +
-  'You are better than ' + betterThanPercent + ' %';
-  $('#results .description').html(description);
+    var ONE_BARELY_REACHES_THIS_SCORE = 100;
+    return Math.floor(100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99));
+  }
 
+  function setEvaluation(score, rank) {
+    var description = 'You scored <span class="score">' + score + '</span>' +
+                      'You are better than ' + rank + ' %';
+    $('#results .description').html(description);
+  }
 }
 
 // set up listeners

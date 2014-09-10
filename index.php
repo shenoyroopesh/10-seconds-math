@@ -95,7 +95,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                          data-toggle="tooltip"
                          data-placement="right"
                          data-html="true"
-                         title="<strong>~ score calculation ~</strong><br>correct answered + <br>number limit / 10 +<br>number of operators enabled" />
+                         title="<strong>&#8212; score factors &#8212;</strong><br>correct answered<br>number limit<br>number of operators enabled" />
                 </h2>
                 
 
