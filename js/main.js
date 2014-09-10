@@ -89,9 +89,7 @@ $('#div-operations :checkbox').change(function(e){
   }
 });
 
-
-
-timeIsOver();
+// timeIsOver();
 function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();

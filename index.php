@@ -56,6 +56,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <!-- <div id="fb-root"></div> -->
     
     <div class="jumbotron">
       <div id="title">
@@ -130,14 +131,6 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                     </section>
                 </div>
 
-                
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=467518076718074&version=1.0";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
             </div>
         </div>
         <p id="start-quiz"><a class="button blue">Play Again</a></p>
