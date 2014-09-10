@@ -1,5 +1,4 @@
-
-
+"use strict";
 
 var firstBackgroundUpdate = true;
 var countdownStarted = false;
@@ -97,6 +96,8 @@ function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();
   setEvaluation(score, getRank(score));
+
+  // function definitions follow //
 
   function calculateScore() {
     var sliderMax = parseInt($('#math-range-slider').val());

@@ -329,13 +329,6 @@ bottom: 10px;
     margin: 10px 0;
 }
 
-
-/*
-.fade {
-    opacity: 0 !important;
-}*/
-
-
 /* slider ends (where the numbers are) are named such by the library */
 #math-range-slider .tooltip {
   display: block;

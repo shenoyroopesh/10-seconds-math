@@ -1,3 +1,4 @@
+"use strict";
 
 // set background height according to screen size
 $(function() {
