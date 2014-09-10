@@ -105,13 +105,13 @@ function timeIsOver() {
   function updateTwitterButton() {
     var twitterButtons = $('.twitter-share-button');
     if (twitterButtons.size() !== 0) {
-      $('.twitter-share-button').remove();
+      $('#sharebuttons .twitter-share-button').remove();
       // Generate new markup
       var $tweetBtn = $('<a></a>')
           .addClass('twitter-share-button')
           .attr('href', 'http://twitter.com/share')
           .attr('data-url', 'http://mental-math-trainer.com')
-          .attr('data-text', 'Check out my math score: ' + score + '! In just 10 seconds <3. mental-math-trainer.com');
+          .attr('data-text', 'Check out my math score: ' + score + '! In just 10 seconds <3');
       $('.sharebutton').first().append($tweetBtn);
       twttr.widgets.load();
     }
