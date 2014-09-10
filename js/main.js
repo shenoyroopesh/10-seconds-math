@@ -78,17 +78,18 @@ function showEvaluationLayout() {
   $('#sharebuttons').show();
 }
 
-$('#div-operations :checkbox').change(function(){
-    if ($(this).is(':checked')) {
-        if ($("input[type=checkbox]:checked").length === 0) {
-          e.preventDefault();
-        }
-    }
+// make sure always at least one checkbox is checked
+$('#div-operations :checkbox').change(function(e){
+  if (!$(this).is(':checked')) {
+      if ($("#div-operations :checkbox:checked").length === 0) {
+        $(this).prop('checked', true);
+      }
+  }
 });
 
 
 
-
+// timeIsOver();
 function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();
