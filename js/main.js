@@ -78,7 +78,6 @@ function showEvaluationLayout() {
   $('#sharebuttons').show();
 }
 
-
 function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();

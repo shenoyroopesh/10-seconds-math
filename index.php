@@ -16,14 +16,14 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <meta name="keywords" content="mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
 
 
-        <meta property="og:image" content="http://www.mental-math-trainer/img/mental-math-trainer.png" />
+        <meta property="og:image" content="http://www.mental-math-trainer/img/mental-math-trainer.png?v=2" />
         <meta property="og:title" content="Mental Math Trainer | Education" />
         <meta property="og:description" content="" />
         <meta property="og:type" content="Education" />
         <meta property="og:url" content="http://www.mental-math-trainer" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="mental-math-trainer.ico?v=1">
+        <link rel="shortcut icon" href="img/mental-math-trainer-favicon.ico?v=2">
 
         <link rel="canonical" href="https://play.google.com/store/apps/details?id=com.troubi.kingofmath" />
         <link rel="canonical" href="https://play.google.com/store/apps/details?id=com.troubi.mathtricks" />
@@ -105,7 +105,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 <div id="sharebuttons">
                     <section>
                       <div class="sharebutton">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my math score @mathwiz" data-via="" data-hashtags="mathwiz">Tweet</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my math score at mental-math-trainer.com" data-via="" data-hashtags="mathwiz">Tweet</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                       </div>
 
@@ -119,7 +119,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
                     <section class="sharefacebook">
                       <div class="sharebutton">
-                      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"></div>
+                      <div class="fb-share-button" data-href="http://www.mental-math-trainer.com/"></div>
                         </div>
                             <div class="cover">
                             <div class="innie"></div>
@@ -129,7 +129,6 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                         <div class="shadow"></div>
                     </section>
                 </div>
-                    
 
                 <div id="fb-root"></div>
                 <script>(function(d, s, id) {
