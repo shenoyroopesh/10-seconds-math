@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Mental Math Trainer | A professional brain trainer. One that is both efficient and fun to use</title>
+        <title>10 seconds of math. be fast. be clever.</title>
         <meta name="description" content="A professional brain trainer. One that is both efficient and fun to use.
 We want to show you that mathematics is far from boring. It's awesome! It's fun! It makes sense.
 Don't lollygag around on the web or with other dull 'learning' apps. You just found what you were looking for. A professional brain trainer, one that is both efficient and fun to use.
@@ -13,12 +13,12 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
 
         <meta name="author" content="Troubi Entertainment">
-        <meta name="keywords" content="mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
+        <meta name="keywords" content="10 seconds of math, mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
 
 
         <meta property="og:image" content="http://www.mental-math-trainer.com/img/mental-math-trainer.png" />
         <meta property="og:title" content="Mental Math Trainer | Education" />
-        <meta property="og:description" content="Check my math score at http://mental-math-trainer.com" />
+        <meta property="og:description" content="10 seconds of math. be fast. be clever. http://mental-math-trainer.com" />
         <meta property="og:type" content="Education" />
         <meta property="og:url" content="http://www.mental-math-trainer.com" />
 
@@ -61,7 +61,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     <div class="jumbotron">
       <div id="title">
           <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
-          <h1 id="text-title">Mental Math Trainer</h1>
+          <h1 id="text-title">10 seconds of math</h1>
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
