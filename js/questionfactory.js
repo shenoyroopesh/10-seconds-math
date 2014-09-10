@@ -2,8 +2,7 @@
 
 var QuestionAdapter = function() {
 
-  this.getLowerBound = function() { return parseInt($('#math-range-slider').val()[0]); }
-  this.getUpperBound = function() { return parseInt($('#math-range-slider').val()[1]); }
+  this.getUpperBound = function() { return parseInt($('#math-range-slider').val()); }
 
   function isCheckBoxOfValueChecked(val) {
     return $('input[type="checkbox"][value="' + val + '"]').is(":checked");
@@ -97,7 +96,7 @@ var QuestionFactory = function() {
 
     // select random factory and apply it to the range (a, b)
     var randFactory = factories[Math.floor(Math.random() * factories.length)];
-    var internal = randFactory(this.adapter.getLowerBound(), this.adapter.getUpperBound());
+    var internal = randFactory(0, this.adapter.getUpperBound());
     return new Question(internal);
   }
 

@@ -13,6 +13,13 @@ var numAnswersCorrect = 0;
 var numAnswersGiven = 0;
 
 
+// function resetState() {
+//   numAnswersGiven = numAnswersCorrect = 0;
+//   countdownTimeoutId = -1;
+//   countdownStarted = false;
+// }
+
+
 $(function() {
   $('#repeat-box').click(function() {
     // reset vars
@@ -45,70 +52,33 @@ function updateTime() {
 
 timeIsOver();
 function timeIsOver() {
-  // bonuses
-  function allOperatorsIncluded() {
-    var numChecked = $('#div-operations :checked').size();
-    var numAll = $('#div-operations :checkbox').size();
+  // hide timing tags
+  $('#questionbox').hide();
+  $('#time-box').hide();
 
-    return numAll === numChecked;
-  }
+  // show evaluation tags
+  $('#start-quiz').show();
+  $('#results').show();
+  $('#sharebuttons').show();
+  $('#stats .sharefb').show();
 
-  // true if the percent of corrently answered questions is 
-  // larger than the bound parameter.
-  // bound should be between 0 and 1
-  function overPercentCorrect(bound) {
-    var percentReached = numAnswersCorrect / numAnswersGiven;
+  // calculate score
+  var sliderMax = parseInt($('#math-range-slider').val());
+  var numOperatorsEnabled =  $('#div-operations :checkbox').size();
+  var score = Math.ceil(numAnswersCorrect + sliderMax / 10 + numOperatorsEnabled);
 
-    return bound >= percentReached;
-  }
-
-
-    $('#questionbox').hide();
-    $('#time-box').hide();
-
-    $('#start-quiz').show();
-    $('#results').show();
-    $('#sharebuttons').show();
+  // show score and % rating
+  $separator = $('<tr class="separator"><td></td><td></td></tr>').hide();
+  $score = $('<tr class="summary"><td>' + score + '</td><td>score</td></tr>').hide();
+  $separator.show('slow'); $score.show('slow');
 
 
-    var $bonusList = $('#bonus-list');
-    var cumulativeScore = numAnswersCorrect;
-    var score = 0;
 
-    // var maxIndex = 0;
-
-    // for (; maxIndex < bonuses.length; maxIndex++) {
-    //   var bonus = bonuses[maxIndex];
-    //   if (bonus.predicate()) {
-    //     score += bonus.points;
-
-        var $bonusTag = $('<tr><td>+' + 5 + '</td><td>' + 'awezom' + '</td></tr>').hide();
-        $bonusList.append($bonusTag);
-
-    //     setTimeout(function() { 
-    //       $bonusTag.show('slow');
-    //     }, 1000 * (maxIndex + 1));
-    //   }
-    // };
-
-    // summary
-    // var summaryDelay = 1000 * (maxIndex + 2);
-    // setTimeout(function() {
-      $separator = $('<tr class="separator"><td></td><td></td></tr>').hide();
-      $score = $('<tr class="summary"><td>' + score + '</td><td>score</td></tr>').hide();
-      $bonusList.append($separator).append($score);
-      $separator.show('slow'); $score.show('slow');
-    // }, summaryDelay);
-
-    // var facebookDelay = 1000 * (maxIndex + 3);
-    // setTimeout(function() {
-      $('#stats .sharefb').fadeIn();
-    // }, facebookDelay);
 
 
   // we should add a real ranking one day
   var ONE_BARELY_REACHES_THIS_SCORE = 50;
-  var betterThanPercent = 100 * Math.max(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), 1)
+  var betterThanPercent = 100 * Math.max(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99)
 
   var description = '' + 
   'You scored <span class="score">' + score+ '</span><br>' +

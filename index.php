@@ -89,11 +89,14 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 <span id="time-left-indicator"></span>
             </p>
             <div id="results">
-                <h2>Results<img class="info" src="img/info.png" type="button" 
-        class="btn btn-default" 
-        data-toggle="tooltip"
-        data-placement="right"
-        title="Tooltip on left"/></h2>
+                <h2>Results
+                    <img src="img/info.png" class="info" 
+                         class="btn btn-default" 
+                         data-toggle="tooltip"
+                         data-placement="right"
+                         data-html="true"
+                         title="<strong>~ score calculation ~</strong><br>correct answered + <br>number limit / 10 +<br>number of operators enabled" />
+                </h2>
                 
 
                 <p class="description"></p>
