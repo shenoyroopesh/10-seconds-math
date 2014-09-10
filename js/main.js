@@ -78,6 +78,17 @@ function showEvaluationLayout() {
   $('#sharebuttons').show();
 }
 
+$('#div-operations :checkbox').change(function(){
+    if ($(this).is(':checked')) {
+        if ($("input[type=checkbox]:checked").length === 0) {
+          e.preventDefault();
+        }
+    }
+});
+
+
+
+
 function timeIsOver() {
   showEvaluationLayout();
   var score = calculateScore();
