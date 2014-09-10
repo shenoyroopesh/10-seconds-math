@@ -106,7 +106,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
                 <div id="sharebuttons">
                     <section>
                       <div class="sharebutton">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check my math score at mental-math-trainer.com" data-via="" data-hashtags="mathwiz, math">Tweet</a>
+                        <a class="twitter-share-button" href="https://twitter.com/share" data-text="" data-via="" data-hashtags="mathwiz, math">Tweet</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                       </div>
 
@@ -120,7 +120,8 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
                     <section class="sharefacebook">
                       <div class="sharebutton">
-                      <div class="fb-share-button" data-href="http://www.mental-math-trainer.com/"></div>
+                      <img id="facebookshare" src="img/fb-share.png" />
+                      <!-- <div id="facebookshare" data-href="http://www.mental-math-trainer.com/"></div> -->
                         </div>
                             <div class="cover">
                             <div class="innie"></div>

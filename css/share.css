@@ -22,6 +22,8 @@ body {
 
 #sharebuttons .twitter-share-button  {
   margin: 0;
+  margin-left: 4px;
+  margin-top: 1px;
 }
 
 #sharebuttons > section {

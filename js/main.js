@@ -4,7 +4,7 @@ var firstBackgroundUpdate = true;
 var countdownStarted = false;
 var countdownTimeoutId = -1;
 
-var QUIZ_AVAILABLE_SECONDS = 10;
+var QUIZ_AVAILABLE_SECONDS = 0;
 var quizStartTime = QUIZ_AVAILABLE_SECONDS;
 
 
@@ -95,7 +95,27 @@ function timeIsOver() {
   var score = calculateScore();
   setEvaluation(score, getRank(score));
 
+  updateTwitterButton();
+  // facebook does update itself
+
+
+
   // function definitions follow //
+
+  function updateTwitterButton() {
+    var twitterButtons = $('.twitter-share-button');
+    if (twitterButtons.size() !== 0) {
+      $('.twitter-share-button').remove();
+      // Generate new markup
+      var $tweetBtn = $('<a></a>')
+          .addClass('twitter-share-button')
+          .attr('href', 'http://twitter.com/share')
+          .attr('data-url', 'http://mental-math-trainer.com')
+          .attr('data-text', 'Check out my math score: ' + score + '! In just 10 seconds <3. mental-math-trainer.com');
+      $('.sharebutton').first().append($tweetBtn);
+      twttr.widgets.load();
+    }
+  }
 
   function calculateScore() {
     var sliderMax = parseInt($('#math-range-slider').val());
