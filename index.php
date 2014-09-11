@@ -17,9 +17,8 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
 
 
         <meta property="og:image" content="http://www.mental-math-trainer.com/img/mental-math-trainer.png" />
-        <meta property="og:title" content="Mental Math Trainer | Education" />
+        <meta property="og:title" content="10 seconds of math. be fast. be clever" />
         <meta property="og:description" content="10 seconds of math. be fast. be clever. http://mental-math-trainer.com" />
-        <meta property="og:type" content="Education" />
         <meta property="og:url" content="http://www.mental-math-trainer.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
