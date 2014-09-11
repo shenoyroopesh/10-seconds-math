@@ -12,8 +12,6 @@ var numAnswersCorrect = 0;
 var numAnswersGiven = 0;
 
 
-var POSITIVE = $('#jsdata-positive').text().split('|');
-var NEGATIVE = $('#jsdata-negative').text().split('|');
 
 function resetState() {
   numAnswersGiven = numAnswersCorrect = 0;
@@ -62,6 +60,7 @@ function showStartLayout() {
   // hide timing tags
   $('#questionbox').show();
   $('#time-box').show();
+  $('.flashbox').show()
 
   // show evaluation tags
   $('#start-quiz').hide();
@@ -73,9 +72,10 @@ function showEvaluationLayout() {
   // hide timing tags
   $('#questionbox').hide();
   $('#time-box').hide();
+  $('.flashbox').hide();
 
   // show evaluation tags
-  $('#start-quiz').show();
+  $('#start-quiz').css({'display': 'inline-block'});
   $('#results').show();
   $('#sharebuttons').show();
 
@@ -122,6 +122,11 @@ function timeIsOver() {
 
   function calculateScore() {
     var sliderMax = parseInt($('#math-range-slider').val());
+
+    if (sliderMax > 100) {
+      sliderMax = 100;
+    }
+
     var numOperatorsEnabled =  $('#div-operations :checkbox').size();
     return Math.ceil(numAnswersCorrect * (sliderMax / 10 + numOperatorsEnabled));
   }
@@ -163,6 +168,9 @@ $(function() {
 
     if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
       numAnswersCorrect++;
+      _flashboxLeft.fire();
+    } else {
+      _flashboxRight.fire();
     }
 
     currentQuestion = factory.nextQuestion();

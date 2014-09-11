@@ -23,3 +23,25 @@ function getRandomInt(min, max) {
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
+
+
+// these function figure the actual width/height taken up by the text displayed with a tag
+$(function() {
+  $.fn.textWidth = function(){
+    var html_org = $(this).html();
+    var html_calc = '<span>' + html_org + '</span>';
+    $(this).html(html_calc);
+    var width = $(this).find('span:first').width();
+    $(this).html(html_org);
+    return width;
+  };
+
+  $.fn.textHeight = function(){
+    var html_org = $(this).html();
+    var html_calc = '<span>' + html_org + '</span>';
+    $(this).html(html_calc);
+    var height = $(this).find('span:first').height();
+    $(this).html(html_org);
+    return height;
+  };
+})

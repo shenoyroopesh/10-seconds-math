@@ -1,0 +1,10 @@
+
+.flashbox {
+    width: 200px;
+    height: 150px;
+    position: relative;
+}
+
+.flashbox .word {
+    position: absolute;
+}

@@ -154,16 +154,31 @@ h2 {
   padding: 0;
 }
 
+#emotions-left {
+  float: left;
+  color: green;
+}
+
+#emotions-right {
+  float: right;
+  color: darkorange;
+}
+
 #questionbox {
-  padding-top: 0;
   text-align: center;
+  margin: 0 auto;
 }
 
 #questionbox .jumbotron {
   padding-left: 150px;
   padding-right: 150px;
   text-align: center;
+}
 
+#question-section {
+  width: 750px;
+  margin: 0 auto;
+  padding-right: 50px;
 }
 
 #time-left, #repeat {
@@ -369,3 +384,14 @@ bottom: 10px;
   right: 0;
   border: 0;
 }
+
+
+
+
+
+
+
+
+
+
+

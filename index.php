@@ -42,6 +42,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
         <link rel="stylesheet" href="css/jquery-ui.min.css">
 
 
+        <link rel="stylesheet" href="css/flashbox.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/buttons.css"> 
         <link rel="stylesheet" href="css/share.css">
@@ -137,15 +138,19 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
       </div>
     </div>
 
-    <div id="questionbox" class="jumbotron">
-        <p id="question">&nbsp;</p>
-        <div id="answerbox">
-          <div class="input-group">
-            <input id="question-answer" pattern="[0-9]{1, 4}" autofocus placeholder="your answer" type="tel" class="form-control">
-            <span class="input-group-btn">
-              <button id="submit-answer" class="btn btn-default" type="button">&#x21a9;</button>
-            </span>
-          </div>
+    <div id="question-section">
+        <div id="emotions-left" class="flashbox"></div>
+        <div id="emotions-right" class="flashbox"></div>
+        <div id="questionbox">
+            <p id="question">&nbsp;</p>
+            <div id="answerbox">
+              <div class="input-group">
+                <input id="question-answer" pattern="[0-9]{1, 4}" autofocus placeholder="your answer" type="tel" class="form-control">
+                <span class="input-group-btn">
+                  <button id="submit-answer" class="btn btn-default" type="button">&#x21a9;</button>
+                </span>
+              </div>
+            </div>
         </div>
     </div>
 
@@ -181,6 +186,7 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     <script src="js/localization.js"></script>
 
     <script src="js/utility.js"></script>
+    <script src="js/flashbox.js"></script>
     <script src="js/questionfactory.js"></script>
     <script src="js/main.js"></script>
 
