@@ -169,7 +169,8 @@ $(function() {
     $answer.val('');
   }
 
-  $('#math-range-slider').change(function(){
+  // update question on slider or checkbox change
+  $('#math-range-slider, #div-operations :checkbox').change(function(){
     setNewQuestion();
   });
 
@@ -208,6 +209,13 @@ $(function() {
       $answer.val('');
     }
   }
+
+  // auto-submit correct answers
+  $answer.keyup(function(e) {
+     if ($answer.val() == currentQuestion.getAnswer()) {
+        $answer.trigger({type: 'keypress', which: 13, keyCode: 13});
+      }
+  });
 
   // register answer submit listeners
   $answer.keypress(function(e) { 
