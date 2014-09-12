@@ -169,6 +169,15 @@ $(function() {
     $answer.val('');
   }
 
+  $('#math-range-slider').change(function(){
+    setNewQuestion();
+  });
+
+  function setNewQuestion() {
+    currentQuestion = factory.nextQuestion();
+    $question.text(currentQuestion.getDisplay());
+  }
+
   function evaluateAnswer() {
     if (countdownTimeoutId === -1) {
       countdownTimeoutId = setInterval(updateTime, 1000);
@@ -183,8 +192,7 @@ $(function() {
       _flashboxRight.fire();
     }
 
-    currentQuestion = factory.nextQuestion();
-    $question.text(currentQuestion.getDisplay());
+    setNewQuestion();
     $answer.val('');
   }
 

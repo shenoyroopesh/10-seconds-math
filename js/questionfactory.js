@@ -13,6 +13,7 @@ var QuestionAdapter = function() {
   this.allowMul = function() { return isCheckBoxOfValueChecked('mul'); }
   this.allowDiv = function() { return isCheckBoxOfValueChecked('div'); }
   this.allowPow = function() { return isCheckBoxOfValueChecked('pow'); }
+  this.allowSqrt = function() { return isCheckBoxOfValueChecked('sqrt'); }
 }
 
 // @param display representation of the question that is displayed
@@ -28,6 +29,11 @@ var Question = function(internal) {
   if (internal.indexOf('^') !== -1) {
     var split = internal.split('^');
     internal = "Math.pow({0}, {1})".format(split[0], split[1]);
+  }
+
+  // replace √ (sqrt unicode) in internal
+  if (internal[0] === '√') {
+    internal = "Math.sqrt({0})".format(internal.substr(1));
   }
 
   this.getAnswer = function() {
@@ -80,6 +86,16 @@ var QuestionFactory = function() {
     return "{0}{1}{2}".format(base, '^', exp);
   }
 
+  function sqrtFactory(a, b) {
+    var perfectSquares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961, 1024];
+    var maxIndex = perfectSquares.length - 1;
+    while (perfectSquares[maxIndex] > b) {
+      maxIndex--;
+    }
+
+    return "√" + perfectSquares[rand(0, maxIndex + 1)];
+  }
+
   this.nextQuestion = function() {
     var factories = [];
     // add factories as requested
@@ -93,6 +109,8 @@ var QuestionFactory = function() {
       factories.push(divFactory);
     if (this.adapter.allowPow())
       factories.push(powFactory);
+    if (this.adapter.allowSqrt())
+      factories.push(sqrtFactory);
 
     // select random factory and apply it to the range (a, b)
     var randFactory = factories[Math.floor(Math.random() * factories.length)];
