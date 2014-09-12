@@ -66,6 +66,8 @@ function showStartLayout() {
   $('#start-quiz').hide();
   $('#results').hide();
   $('#sharebuttons').hide();
+
+  $('#question-answer').focus();
 }
 
 function showEvaluationLayout() {
@@ -81,7 +83,15 @@ function showEvaluationLayout() {
 
   $('#time-left').text(QUIZ_AVAILABLE_SECONDS);
   $('#time-left-indicator').css({'width': '0%'});
+
+  
 }
+
+$(document).keypress(function(e) {
+  if(e.which == 13 && $('#start-quiz').is(':visible')) {
+    $('#start-quiz a').click();
+  }
+});
 
 // make sure always at least one checkbox is checked
 $('#div-operations :checkbox').change(function(e){

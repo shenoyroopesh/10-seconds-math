@@ -281,10 +281,15 @@ a:hover {
 }
 
 footer {
- text-align: right;
-position: absolute;
-right: 20%;
-bottom: 10px;
+  text-align: right;
+  position: absolute;
+  right: 20%;
+  bottom: 10px;
+}
+
+footer > p {
+  float: left;
+  padding: 0 20px;
 }
 
 
