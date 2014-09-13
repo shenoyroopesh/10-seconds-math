@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+    $ua = strtolower($_SERVER['HTTP_USER_AGENT']);
+    if (stripos($ua,'android') !== false) { // && stripos($ua,'mobile') !== false) {
+      header('Location: https://play.google.com/store/apps/details?id=com.troubi.kingofmath');
+      exit();
+    }
+?><!DOCTYPE html>
 <html class="no-js" prefix="og: http://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
