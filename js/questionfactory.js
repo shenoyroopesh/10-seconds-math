@@ -82,7 +82,7 @@ var QuestionFactory = function() {
 
   function powFactory(a, b) {
     var base = rand(2, Math.min(b, 21));
-    var exp = rand(2, 3);
+    var exp = 2; //rand(2, 3);
     return "{0}{1}{2}".format(base, '^', exp);
   }
 
