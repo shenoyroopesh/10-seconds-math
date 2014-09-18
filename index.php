@@ -152,9 +152,9 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
             <div id="answerbox">
               <div class="input-group">
                 <input id="question-answer" pattern="[0-9]{1, 4}" autofocus placeholder="your answer" type="tel" class="form-control">
-                <span class="input-group-btn">
-                  <button id="submit-answer" class="btn btn-default" type="button">&#x21a9;</button>
-                </span>
+                <!-- <span class="input-group-btn"> -->
+                  <!-- <button id="submit-answer" class="btn btn-default" type="button">&#x21a9;</button> -->
+                <!-- </span> -->
               </div>
             </div>
         </div>

@@ -188,9 +188,10 @@ $(function() {
 
     if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
       numAnswersCorrect++;
-      _flashboxLeft.fire();
+      // _flashboxLeft.fire();
+      quizStartTime += 2;
     } else {
-      _flashboxRight.fire();
+      // _flashboxRight.fire();
     }
 
     setNewQuestion();
@@ -213,17 +214,18 @@ $(function() {
   // auto-submit correct answers
   $answer.keyup(function(e) {
      if ($answer.val() == currentQuestion.getAnswer()) {
-        $answer.trigger({type: 'keypress', which: 13, keyCode: 13});
+        // $answer.trigger({type: 'keypress', which: 13, keyCode: 13});
+        submitInputPressed();
       }
   });
 
   // register answer submit listeners
-  $answer.keypress(function(e) { 
-    submitInputPressed(e);
-  });
+  // $answer.keypress(function(e) { 
+  //   submitInputPressed(e);
+  // });
 
-  $('#submit-answer').click(function() { 
-    submitInputPressed();
-    $answer.focus(); 
-  });
+  // $('#submit-answer').click(function() { 
+  //   submitInputPressed();
+  //   $answer.focus(); 
+  // });
 });
