@@ -145,7 +145,7 @@ function timeIsOver() {
     // TODO we should add a real ranking one day
 
     var ONE_BARELY_REACHES_THIS_SCORE = 200;
-    return Math.floor(100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), .99));
+    return Math.floor(100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), 1));
   }
 
   function setEvaluation(score, rank) {
