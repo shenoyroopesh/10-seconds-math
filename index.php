@@ -163,7 +163,11 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     <div id="social-container" class="container">
       <div id="viewport"></div>
       <footer>
-        <p><a href="https://en.wikipedia.org/wiki/Mental_calculation">Some cool tips on mental calculation</a></p>
+        <p>
+            <a href="http://troubi.com/king">King of Math</a> ✦ 
+            <a href="http://troubi.com">Troubi</a> ✦ 
+            <a href="https://en.wikipedia.org/wiki/Mental_calculation">Some cool tips on mental calculation</a>
+        </p>
         <!-- <p>&copy; <a href="http://troubi.com">Troubi Entertainment</a> 2014</p> -->
       </footer>
     </div>
