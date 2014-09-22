@@ -9,22 +9,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>10 seconds of math. be fast. be clever.</title>
-        <meta name="description" content="A professional brain trainer. One that is both efficient and fun to use.
-We want to show you that mathematics is far from boring. It's awesome! It's fun! It makes sense.
-Don't lollygag around on the web or with other dull 'learning' apps. You just found what you were looking for. A professional brain trainer, one that is both efficient and fun to use.
-Strengthen your mental abilities, improve your ability to stay concentrated over long periods of time and sharpen your perception skills.
-You won't regret it.
-We guarantee, if you make it through the entire plan you'll be better than you've ever been. Pinky promise!">
+        <title>10 seconds of math. be fast. be clever. &mdash; #1 online mental math trainer</title>
+        <meta name="description" content="#1 online mental math trainer. Try to beat the time! 
+You've got 10 seconds: try to solve as many equations as any humanly possible! mental calculation and practice mental arithmetic. Solve many mathematical problems. fun funny math game, maths game online">
 
 
         <meta name="author" content="Troubi Entertainment">
-        <meta name="keywords" content="10 seconds of math, mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
+        <meta name="keywords" content="10 seconds of math, mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, fun, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
 
 
         <meta property="og:image" content="http://www.mental-math-trainer.com/img/mental-math-trainer.png" />
-        <meta property="og:title" content="10 seconds of math. be fast. be clever" />
-        <meta property="og:description" content="10 seconds of math. be fast. be clever. http://mental-math-trainer.com" />
+        <meta property="og:title" content="10 seconds of math. be fast. be clever — #1 online mental math trainer" />
+        <meta property="og:description" content="10 seconds of math. be fast. be clever. http://mental-math-trainer.com — #1 online mental math trainer" />
         <meta property="og:url" content="http://www.mental-math-trainer.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +63,12 @@ We guarantee, if you make it through the entire plan you'll be better than you'v
     <div class="jumbotron">
       <div id="title">
           <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
+          <h1 class="not-visible">#1 online mental math trainer</h1>
           <h1 id="text-title">10 seconds of math</h1>
+          <h2 class="not-visible">10 seconds of math. be fast. be clever. &mdash; #1 online mental math trainer</h2>
+          <h3 class="not-visible"><b>#1 online mental math trainer. Try to beat the time! 
+You've got 10 seconds: try to solve as many equations as any humanly possible! mental calculation and practice mental arithmetic. Solve many mathematical problems. fun funny math game, maths game online
+</b></h3>
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">

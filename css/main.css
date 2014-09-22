@@ -390,7 +390,9 @@ footer > p {
   border: 0;
 }
 
-
+.not-visible {
+  display: none !important;
+}
 
 
 

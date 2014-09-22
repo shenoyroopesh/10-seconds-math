@@ -1,7 +1,7 @@
 
 
-  // checkboxes
-  var CHECK_BOX_VALUES = ['add', 'sub', 'mul', 'div', 'pow', 'sqrt'];
+// checkboxes
+var CHECK_BOX_VALUES = ['add', 'sub', 'mul', 'div', 'pow', 'sqrt'];
 
 // read cookies
 $(function() {
