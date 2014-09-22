@@ -164,13 +164,22 @@ You've got 10 seconds: try to solve as many equations as any humanly possible! m
     <div id="social-container" class="container">
       <div id="viewport"></div>
       <footer>
-        <p>
-            <a href="http://troubi.com/king">King of Math</a> ✦ 
-            <a href="http://troubi.com">Troubi</a> ✦ 
-            <a href="https://en.wikipedia.org/wiki/Mental_calculation">Some cool tips on mental calculation</a>
-        </p>
-        <!-- <p>&copy; <a href="http://troubi.com">Troubi Entertainment</a> 2014</p> -->
+        <p>&copy; <a href="http://troubi.com">Troubi Entertainment</a> 2014</p>
       </footer>
+    </div>
+    <div id="android-apps">
+        <p>
+            <span class="title">King of Math</span>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.troubi.kingofmath">
+              <img alt="Android app on Google Play" src="img/en_app_rgb_wo_45.png" />
+            </a>
+        </p>
+        <p>
+            <span class="title">Math Tricks</span>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.troubi.mathtricks">
+              <img alt="Android app on Google Play" src="img/en_app_rgb_wo_45.png" />
+            </a>
+        </p>
     </div>
 
     <span style="display:none">
