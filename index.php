@@ -9,18 +9,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>10 seconds of math. be fast. be clever. &mdash; #1 online mental math trainer</title>
-        <meta name="description" content="#1 online mental math trainer. Try to beat the time! 
-You've got 10 seconds: try to solve as many equations as any humanly possible! mental calculation and practice mental arithmetic. Solve many mathematical problems. fun funny math game, maths game online">
-
-
-        <meta name="author" content="Troubi Entertainment">
-        <meta name="keywords" content="10 seconds of math, mental math trainer, math practice, mental arithmetic, mental calculations, math trainer, fun, online, free, no download, mathematik kopfrechentrainer, mathe trainer online, mathe üben, kopfrechnen üben" />
+        <title>Practice mental arithmetic &mdash; the arithmetic game</title>
+        <meta name="keywords" content="Kopfrechnen, Mathematik, Mathe, üben, trainieren, online, live, javascript, kostenlos, werbefrei, mental arithmetic, practice, train, math, brain, mental math, arithmetics, math games, math training, remedial math practices, arithmetic problems, mental calculation, basic math, free, mental math, arithmetics, math games, math training, remedial math practices, math, fractions, homework, pi, mathematician, fraction, algebra, geometry, number, numbers, equation, equations, math anxiety, homeschool math, math problems, math games, mental math, math puzzles, decimal, percent, mathematics, math magic, mathmagic, math homework, pre-algebra, converter, convert, prime number, ratio, probability, statistics, calculate, calculator, statistic, calculus, circle, trigonometry, tessellation, tesellation, tesselation, teselation, fractal, fractol, word problems, word problem, Pythagorean Theorem, multiply, divide, division, multiplication, quadratic, square, circle, triangle, trapezoid, polygon, solve, formula, area, perimeter, volume, unit, unit conversion, conversion, measure, measurement, change units, math resources, math history, mathematical, maths, maths problem, maths problems, converting, calculating" />
+        <meta name="description" content="Kopfrechnen trainieren kostenlos und werbefrei. Practice mental arithmetic online. No ads and no charge." />    
+        <meta name="author" content="Troubi Entertainment, http://www.troubi.com">
 
 
         <meta property="og:image" content="http://www.mental-math-trainer.com/img/mental-math-trainer.png" />
-        <meta property="og:title" content="10 seconds of math. be fast. be clever — #1 online mental math trainer" />
-        <meta property="og:description" content="10 seconds of math. be fast. be clever. http://mental-math-trainer.com — #1 online mental math trainer" />
+        <meta property="og:title" content="Practice mental arithmetic online. No ads and no charge." />
+        <meta property="og:description" content="Practice mental arithmetic online. No ads and no charge. http://mental-math-trainer.com" />
         <meta property="og:url" content="http://www.mental-math-trainer.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,12 +60,13 @@ You've got 10 seconds: try to solve as many equations as any humanly possible! m
     <div class="jumbotron">
       <div id="title">
           <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
-          <h1 class="not-visible">#1 online mental math trainer</h1>
+          <h1 class="hardly-visible">Train your brain with mental calculation</h1>
           <h1 id="text-title">10 seconds of math</h1>
-          <h2 class="not-visible">10 seconds of math. be fast. be clever. &mdash; #1 online mental math trainer</h2>
-          <h3 class="not-visible"><b>#1 online mental math trainer. Try to beat the time! 
-You've got 10 seconds: try to solve as many equations as any humanly possible! mental calculation and practice mental arithmetic. Solve many mathematical problems. fun funny math game, maths game online
-</b></h3>
+          <h2 class="hardly-visible">This web application generates an endless supply of new arithmetic problems. You can choose from five difficulty levels. Read the mental calculation tips to learn to solve the problems more effectively.</h2>
+          <h3 class="hardly-visible"><b>Arithmetic game</b> 
+            You can easily improve your skills in mental arithmetics!
+            puzzles calculate formula mathematics maths decimal number calculating mathematician multiply measurement probability equation division measure homework units word problem solve converting resources tessellation anxiety math problem problems convert unit ratio number trigonometry perimeter divide mental multiplication calculus math quadratic triangle teselation problems pi change equations homeschool fraction tesellation converter maths problems fractions conversion math prime mathmagic Theorem calculator percent magic homework fractol volume math math tesselation math math math mathematical statistic unit geometry math polygon square math pre-algebra algebra word statistics games area math Pythagorean fractal history trapezoid maths conversion circle numbers circle 
+</h3>
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
@@ -224,6 +222,9 @@ You've got 10 seconds: try to solve as many equations as any humanly possible! m
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-52396561-1');ga('send','pageview');
     </script>
+
+    <p class="hardly-visible">puzzles calculate formula mathematics maths decimal number calculating mathematician multiply measurement probability equation division measure homework units word problem solve converting resources tessellation anxiety math problem problems convert unit ratio number trigonometry perimeter divide mental multiplication calculus math quadratic triangle teselation problems pi change equations homeschool fraction tesellation converter maths problems fractions conversion math prime mathmagic Theorem calculator percent magic homework fractol volume math math tesselation math math math mathematical statistic unit geometry math polygon square math pre-algebra algebra word statistics games area math Pythagorean fractal history trapezoid maths conversion circle numbers circle </p>
+    <p class="hardly-visible">puzzles calculate formula mathematics maths decimal number calculating mathematician multiply measurement probability equation division measure homework units word problem solve converting resources tessellation anxiety math problem problems convert unit ratio number trigonometry perimeter divide mental multiplication calculus math quadratic triangle teselation problems pi change equations homeschool fraction tesellation converter maths problems fractions conversion math prime mathmagic Theorem calculator percent magic homework fractol volume math math tesselation math math math mathematical statistic unit geometry math polygon square math pre-algebra algebra word statistics games area math Pythagorean fractal history trapezoid maths conversion circle numbers circle </p>
 
   </body>
 </html>
