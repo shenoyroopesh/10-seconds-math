@@ -8,5 +8,5 @@ You've got 10 seconds to start. Answer questions to get more time, and don't let
 Test it yourself over here at http://www.mental-math-trainer.com
 
 
-# 230 upvotes on HackerNews and discussion
+# Discussion on HackerNews
 https://news.ycombinator.com/item?id=8664180
