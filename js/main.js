@@ -221,7 +221,7 @@ $(function() {
     if (question !== undefined && question.getAnswer() == $answer.text()) {
       numAnswersCorrect++;
       // _flashboxLeft.fire();
-      quizStartTime += 2;
+      quizStartTime += 3;
       setNewQuestion();
       $answer.val('');
     } else {
