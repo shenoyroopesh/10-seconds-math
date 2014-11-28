@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="no-js" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Monster Math &mdash; the reverse arithmetic game</title>
+        <meta name="keywords" content="Monster Math,Cool Math Practice" />
+        <meta name="description" content="Practice mental arithmetic online - reverse problems" />    
+        <meta name="author" content="makkajai, http://www.makkajai.com">
+
+
+        <meta property="og:image" content="http://www.mental-math-trainer.com/img/mental-math-trainer.png" />
+        <meta property="og:title" content="Monster Math - practice reverse arithmetic online" />
+        <meta property="og:description" content="Monster Math - practice reverse arithmetic online" />
+        <meta property="og:url" content="http://www.makkajai.com/cool-tools/" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/mental-math-trainer-favicon.ico?v=2">
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+
+        <!-- The noUiSlider stylesheet -->
+        <link rel="stylesheet" href="css/jquery.nouislider.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+
+        <link rel="stylesheet" href="css/flashbox.css">
+        <link rel="stylesheet" href="css/main.css?v=1">
+        <link rel="stylesheet" href="css/buttons.css"> 
+        <link rel="stylesheet" href="css/share.css">
+
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- <div id="fb-root"></div> -->
+    
+    <div class="jumbotron">
+      <div id="title">
+          <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
+          <h1 id="text-title">10 seconds of reverse math</h1>
+      </div>
+      <div id="settings-and-stats" class="container">
+        <div id="settings" class="white-box">
+            <h2 id="text-selectrange">Number limit</h2>
+            <div id="math-range-slider"></div>
+
+            <p id="text-operations">&nbsp;</p>
+            <div id="div-operations">
+                <ul class="nobullets">
+                    <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
+                    <li><label><input type="checkbox" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
+                </ul>
+                <ul class="nobullets">
+                    <li><label><input type="checkbox" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>                    
+                    <li><label><input type="checkbox" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="stats" class="white-box">
+            <p id="time-box">
+                <span id="time-left">10</span>
+                <span id="time-left-text">seconds left</span>
+                <span id="time-left-indicator"></span>
+            </p>
+            <div id="results">
+                <h2>Results
+                    <img src="img/info.png" class="info" 
+                         class="btn btn-default" 
+                         data-toggle="tooltip"
+                         data-placement="right"
+                         data-html="true"
+                         title="<strong>&#8212; score factors &#8212;</strong><br>correct answered<br>number limit<br>number of operators enabled" />
+                </h2>
+                
+
+                <p class="description"></p>
+
+
+                <div id="sharebuttons">
+                    <section>
+                      <div class="sharebutton">
+                        <a class="twitter-share-button" href="https://twitter.com/share" data-text="" data-via="" data-hashtags="mathwiz, math">Tweet</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                      </div>
+
+                        <div class="cover">
+                            <div class="innie"></div>
+                            <div class="spine"></div>
+                            <div class="outie"></div>
+                        </div>
+                        <div class="shadow"></div>
+                    </section>
+
+                    <section class="sharefacebook">
+                      <div class="sharebutton">
+                      <img id="facebookshare" src="img/fb-share.png" />
+                        </div>
+                            <div class="cover">
+                            <div class="innie"></div>
+                            <div class="spine"></div>
+                            <div class="outie"></div>
+                        </div>
+                        <div class="shadow"></div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        <p id="start-quiz"><a class="button blue">Play Again</a></p>
+      </div>
+    </div>
+
+    <div id="question-section">
+        <div id="emotions-left" class="flashbox"></div>
+        <div id="emotions-right" class="flashbox"></div>
+        <div id="questionbox">
+            <p id="question">&nbsp;</p>
+            <div id="answerbox">
+              <div class="input-group">
+                <input id="question-answer" pattern="[0-9]{1, 4}" autofocus placeholder="your answer" type="tel" class="form-control">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="social-container" class="container">
+      <div id="viewport"></div>
+      <footer>
+        <p>&copy; <a href="http://www.makkajai.com">makkajai</a> 2014</p>
+      </footer>
+    </div>
+    <div id="android-apps">
+        <p>
+            <span class="title">Monster Math</span>
+            <a target="_blank" href="https://itunes.apple.com/us/app/monster-math-fun-math-game/id924441242">
+              <img alt="iPad app on App Store" src="img/apple-ios.png" />
+            </a>
+        </p>
+        <p>
+            <span class="title">Monster Math - Free</span>
+            <a target="_blank" href="https://itunes.apple.com/us/app/monster-math-free-fun-math/id931943412">
+              <img alt="iPad app on App Store" src="img/apple-ios.png" />
+            </a>
+        </p>
+    </div>
+
+    <!-- fork me on github -->
+    <a id="github-forkme" target="_blank" href="https://github.com/shenoyroopesh/10-seconds-math">
+        <img src="img/forkme-github.png" alt="Fork me on GitHub">
+    </a>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/setup.js"></script>
+    <script src="js/setdefaults.js"></script>
+    <script src="js/localization.js"></script>
+
+    <script src="js/utility.js"></script>
+    <script src="js/flashbox.js"></script>
+    <script src="js/questionfactory.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- The noUiSlider script -->
+    <script src="js/jquery.nouislider.min.js"></script>
+    <script src="js/jquery.color.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42779328-1', 'auto');
+      ga('send', 'pageview');
+</script>
+  </body>
+</html>
