@@ -157,36 +157,68 @@ function timeIsOver() {
 
 // set up listeners
 $(function() {
-  var $question = $('#question');
-  var $answer = $('#question-answer');
-  var currentQuestion;
+  var $question1 = $('#question1');
+  var $question2 = $('#question2');
+  var $question3 = $('#question3');
+  var $question4 = $('#question4');
+
+  $question1.click(compareWith1);
+  $question2.click(compareWith2);
+  $question3.click(compareWith3);
+  $question4.click(compareWith4);
+
+  var $answer = $('#answer');
+  var currentQuestion1;
+  var currentQuestion2;
+  var currentQuestion3;
+  var currentQuestion4;
   var factory = new QuestionFactory();
 
-  setFirstQuestion();
-  function setFirstQuestion() {
-    currentQuestion = factory.nextQuestion();
-    $question.text(currentQuestion.getDisplay());
-    $answer.val('');
-  }
+  setNewQuestion();
 
   // update question on slider or checkbox change
   $('#math-range-slider, #div-operations :checkbox').change(function(){
     setNewQuestion();
   });
 
-  function setNewQuestion() {
-    currentQuestion = factory.nextQuestion();
-    $question.text(currentQuestion.getDisplay());
+  function compareWith1(){
+    evaluateAnswer(currentQuestion1);
+  }
+  
+  function compareWith2(){
+    evaluateAnswer(currentQuestion2);
+  }
+    
+  function compareWith3(){
+    evaluateAnswer(currentQuestion3);
+  }
+  
+  function compareWith4(){
+    evaluateAnswer(currentQuestion4);
   }
 
-  function evaluateAnswer() {
+  function setNewQuestion() {
+    currentQuestion1 = factory.nextQuestion();
+    currentQuestion2 = factory.nextQuestion();
+    currentQuestion3 = factory.nextQuestion();
+    currentQuestion4 = factory.nextQuestion();
+    var questions = [currentQuestion1, currentQuestion2, currentQuestion3, currentQuestion4];
+    $question1.text(currentQuestion1.getDisplay());
+    $question2.text(currentQuestion2.getDisplay());
+    $question3.text(currentQuestion3.getDisplay());
+    $question4.text(currentQuestion4.getDisplay());
+
+    $answer.text(questions[Math.floor(Math.random()*questions.length)].getAnswer())
+  }
+
+  function evaluateAnswer(question) {
     if (countdownTimeoutId === -1) {
       countdownTimeoutId = setInterval(updateTime, 1000);
     }
 
     numAnswersGiven++;
 
-    if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
+    if (question !== undefined && question.getAnswer() == $answer.text()) {
       numAnswersCorrect++;
       // _flashboxLeft.fire();
       quizStartTime += 2;
@@ -202,6 +234,7 @@ $(function() {
     return !isNaN(parseFloat(n)) && isFinite(n);
   }
 
+/*
   function submitInputPressed(e) {
     if(e === undefined || e.which == 13) {
       if ($answer.val().trim() !== '' && isNumber($answer.val())) { 
@@ -218,6 +251,7 @@ $(function() {
         submitInputPressed();
       }
   });
+*/
 
   // register answer submit listeners
   // $answer.keypress(function(e) { 

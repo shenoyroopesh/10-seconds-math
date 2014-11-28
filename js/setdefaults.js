@@ -28,7 +28,7 @@ $(function() {
 $(function() {
   $('#math-range-slider').change(function(a) {
     var bound = $(a.target).val();
-    $.cookie('upperbound', bound, { expires: 7 });
+//    $.cookie('upperbound', bound, { expires: 7 });
   });
 
   function getCheckBoxFromValue(val) {

@@ -2,7 +2,6 @@
 
 // set background height according to screen size
 $(function() {
-
   var footerHeight = 55;
 
   if (isMobile()) {
