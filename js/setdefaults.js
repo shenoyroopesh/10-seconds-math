@@ -53,9 +53,9 @@ $(function() {
   function showSocialButtons() {
     var html =
                 '<div id="social-buttons" class="fadeable fade">'
-            + '<div class="fb-like" data-href="http://www.mental-math-trainer.com" data-layout="box_count" data-width="50" ></div>'
-            + '<div class="g-plusone-frame"><div class="g-plusone" data-size="tall" data-href="http://www.mental-math-trainer.com"></div></div>'
-            + '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.mental-math-trainer.com" data-text="#1 online mental math trainer" data-count="vertical">Tweet</a>'
+            + '<div class="fb-like" data-href="http://www.makkajai.com/cool-tools/reverse-math" data-layout="box_count" data-width="50" ></div>'
+            + '<div class="g-plusone-frame"><div class="g-plusone" data-size="tall" data-href="http://www.makkajai.com/cool-tools/reverse-math"></div></div>'
+            + '<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.makkajai.com/cool-tools/reverse-math" data-text="Cool reverse arithmetic trainer" data-count="vertical">Tweet</a>'
             + '<div id="fb-root"></div>'
             + '</div>';
     document.getElementById('viewport').insertAdjacentHTML('beforeEnd', html);
@@ -101,8 +101,8 @@ $(function() {
       {
         method: 'feed',
         name: '10 seconds math',
-        link: 'http://www.mental-math-trainer.com/',
-        picture: 'www.mental-math-trainer.com/img/mental-math-trainer.png',
+        link: 'http://www.makkajai.com/cool-tools/reverse-math',
+        picture: 'www.makkajai.com/cool-tools/reverse-math/img/monster-math.png',
         caption: '10 seconds of math. be fast. be clever.',
         description: 'Check out my math score: ' + score + '! In just 10 seconds <3'
       },
