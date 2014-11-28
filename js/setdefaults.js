@@ -62,7 +62,7 @@ $(function() {
 
     var script = document.createElement('script');
     script.async = true;
-    script.src = document.location.protocol + '//connect.facebook.net/en_US/all.js#xfbml=1&appId=467518076718074';
+    script.src = document.location.protocol + '//connect.facebook.net/en_US/all.js#xfbml=1&appId=555252991272378';
     document.getElementById('fb-root').appendChild(script);
 
     script = document.createElement('script');
