@@ -222,12 +222,11 @@ $(function() {
       numAnswersCorrect++;
       // _flashboxLeft.fire();
       quizStartTime += 2;
+      setNewQuestion();
+      $answer.val('');
     } else {
       // _flashboxRight.fire();
     }
-
-    setNewQuestion();
-    $answer.val('');
   }
 
   function isNumber(n) { 
