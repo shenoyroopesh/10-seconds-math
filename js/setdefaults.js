@@ -102,7 +102,7 @@ $(function() {
         method: 'feed',
         name: '10 seconds math',
         link: 'http://reverse-math.makkajai.com',
-        picture: 'http://reverse-math.makkajai.com/img/monster-math.png',
+        picture: 'http://reverse-math.makkajai.com/img/monster-math.jpg',
         caption: '10 seconds of math. be fast. be clever.',
         description: 'Check out my math score: ' + score + '! In just 10 seconds <3'
       },
