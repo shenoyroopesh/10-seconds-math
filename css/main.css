@@ -9,7 +9,6 @@ body {
   padding: 0;
   font-family: "Myriad Pro" !important;
   
-  min-width: 900px;
 }
 
 
@@ -25,15 +24,14 @@ body {
 }
 
 #settings-and-stats {
-  text-align: center;
-  width: 780px;
-  min-width: 780px;
+    text-align: center;
 }
 
 #settings {
   display: inline-block;
   text-align: center;
   padding: 10px;
+  margin: 20px;
   float: left;
   height: 215px;
 }
@@ -41,6 +39,7 @@ body {
 #stats {
   display: inline-block;
   padding: 20px;
+  margin: 20px;
   text-align: center;
   width: 260px;
   height: 215px;
@@ -174,7 +173,6 @@ h2 {
 }
 
 #question-section {
-  width: 750px;
   margin: 0 auto;
   padding-right: 50px;
 }
@@ -376,6 +374,10 @@ footer > p {
 /* hide github banner on small screens */
 @media only screen and (min-width:0px) and (max-width:786px){ 
   #github-forkme img {
+    display: none;
+  }
+
+  #android-apps {
     display: none;
   }
 }
