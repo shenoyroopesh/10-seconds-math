@@ -124,7 +124,7 @@ function timeIsOver() {
           .addClass('twitter-share-button')
           .attr('href', 'http://twitter.com/share')
           .attr('data-url', 'http://reverse-math.makkajai.com')
-          .attr('data-text', 'Check out my math score: ' + score + '! In just 10 seconds <3');
+          .attr('data-text', 'Check out my reverse math score: ' + score + '! In just 10 seconds <3');
       $('.sharebutton').first().append($tweetBtn);
       twttr.widgets.load();
     }
