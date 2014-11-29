@@ -104,7 +104,7 @@ $(function() {
         link: 'http://reverse-math.makkajai.com',
         picture: 'http://reverse-math.makkajai.com/img/monster-math.jpg',
         caption: '10 seconds of reverse math. Are you fast enough?',
-        description: 'Check out my math score: ' + score + '! In just 10 seconds <3'
+        description: 'Check out my reverse math score: ' + score + '! In just 10 seconds <3'
       },
       function(response) {
         // if (response && response.post_id) {
