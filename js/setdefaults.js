@@ -100,10 +100,10 @@ $(function() {
     FB.ui(
       {
         method: 'feed',
-        name: '10 seconds math',
+        name: '10 seconds reverse math',
         link: 'http://reverse-math.makkajai.com',
         picture: 'http://reverse-math.makkajai.com/img/monster-math.jpg',
-        caption: '10 seconds of math. be fast. be clever.',
+        caption: '10 seconds of reverse math. Are you fast enough?',
         description: 'Check out my math score: ' + score + '! In just 10 seconds <3'
       },
       function(response) {
