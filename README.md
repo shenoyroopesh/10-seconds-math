@@ -1,5 +1,5 @@
-10 seconds of reverse-math. Be fast. Be clever.
-===============================================
+10 seconds of reverse-math. Are you fast enough?
+================================================
 
 Try to beat the time! <br /><br />
 You've got 10 seconds to start. Answer questions to get more time, and don't let the clock run out.
